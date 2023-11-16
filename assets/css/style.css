@@ -4,7 +4,7 @@
 }
 
 body {
-  line-height: 1;
+  line-height: 1.2;
 }
 
 ol, ul {
@@ -13,7 +13,7 @@ ol, ul {
 
 header {
   background-color: #202020;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.3rem;
 }
 header nav {
   background: #202020;
@@ -21,7 +21,7 @@ header nav {
   justify-content: space-between;
   align-items: center;
 }
-header nav img {
+header nav .logo {
   width: 7rem;
   height: 4rem;
   margin: 5px auto;
@@ -47,6 +47,30 @@ header nav .fa-xmark {
   display: none;
   color: #e5fe04;
   cursor: pointer;
+}
+
+main {
+  background-color: #202020;
+}
+main .teamPhoto {
+  width: 70%;
+  border-radius: 5px;
+  text-align: center;
+}
+main .teamPresentation {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+}
+main .teamPresentation h1 {
+  font-size: 2rem;
+  color: #fff;
+}
+main .teamPresentation p {
+  color: #fff;
+}
+main .teamPresentation .motoPhoto {
+  display: none;
 }
 
 @media screen and (max-width: 900px) {
@@ -76,5 +100,22 @@ header nav .fa-xmark {
   }
   header nav .fa-solid {
     display: none;
+  }
+  .teamPresentation {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+  }
+  .teamPresentation h1 {
+    font-size: 2rem;
+    color: #fff;
+  }
+  .teamPresentation p {
+    color: #fff;
+  }
+  .teamPresentation .motoPhoto {
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 150px #7d7d7d;
   }
 }

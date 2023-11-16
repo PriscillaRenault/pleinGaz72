@@ -1,10 +1,11 @@
+//TODO structurer tous les fichiers sass en dossier
 // Reset styles
 *
     padding: 0
     margin: 0
 
 body
-    line-height: 1
+    line-height: 1.2
 
 ol, ul
     list-style: none
@@ -19,14 +20,14 @@ $neutral-0: #fff
 //header
 header
     background-color: $neutral-900
-    margin-bottom: 1.5rem
+    margin-bottom: 0.3rem
     nav
         background: $neutral-900  
         display: flex
         justify-content: space-between
         align-items: center
 
-        img
+        .logo
             width: 7rem
             height: 4rem
             margin: 5px auto
@@ -50,6 +51,25 @@ header
             display: none
             color: #e5fe04    
             cursor: pointer
+// main
+main
+    background-color: $neutral-900
+    .teamPhoto
+        width: 70%
+        border-radius: 5px
+        text-align: center
+
+    .teamPresentation
+        display: flex
+        flex-direction: row
+        padding: 15px
+        h1
+            font-size: 2rem
+            color: $neutral-0
+        p
+            color: $neutral-0
+        .motoPhoto
+            display: none
 
 
 
@@ -78,9 +98,19 @@ header
                 width: 70%
                 li a, a:visited
                     color: $neutral-900
-            
-
             .fa-solid
                 display: none
-
+    .teamPresentation
+        display: flex
+        flex-direction: row
+        padding: 15px
+        h1
+            font-size: 2rem
+            color: $neutral-0
+        p
+            color: $neutral-0
+        .motoPhoto
+            width: 30%
+            border-radius: 5px
+            box-shadow: 150px $neutral-500
 
