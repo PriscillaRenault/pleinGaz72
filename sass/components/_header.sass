@@ -3,19 +3,19 @@
 header
     background-color: utils.$neutral-900
     margin-bottom: 0.3rem
-    nav
+    .nav
         background: utils.$neutral-900  
         display: flex
         justify-content: space-between
         align-items: center
 
-        .logo
+        &__logo
             width: 7rem
             height: 4rem
-            margin: 5px auto
+            margin: 0 auto
             border-radius: 10px 
 
-        .menuList
+        &__menuList
             display: none
             li a, a:visited
                 color: utils.$primaryColor
@@ -25,38 +25,37 @@ header
                 color: utils.$neutral-0
                 text-decoration: underline
 
-        .fa-solid
+        &__icons
             color: utils.$primaryColor
             margin: 10px
         
-        .fa-xmark
+        &--xmark
             display: none
             color: utils.$primaryColor  
             cursor: pointer
 
 @media screen and (max-width: 900px) 
     header
-        nav
+        .nav
             justify-content: space-around
 
 
 @media screen and (min-width: 650px) 
     header
-        nav
+        .nav
             display: flex
             justify-content: space-between
             background: linear-gradient(130deg, utils.$neutral-900 22%,  utils.$neutral-0 22% 23%, utils.$primaryColor 23% 100%)
             align-items: center
             padding: 10px
             font-size: calc( 0.5rem + 1vw )
-            
-            img
+            &__logo
                 margin: 0
-            .menuList
+            &__menuList
                 display: flex
                 justify-content: space-between
                 width: 70%
                 li a, a:visited
                     color: utils.$neutral-900
-            .fa-solid
+            &__icons
                 display: none

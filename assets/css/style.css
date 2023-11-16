@@ -15,47 +15,47 @@ header {
   background-color: #202020;
   margin-bottom: 0.3rem;
 }
-header nav {
+header .nav {
   background: #202020;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header nav .logo {
+header .nav__logo {
   width: 7rem;
   height: 4rem;
-  margin: 5px auto;
+  margin: 0 auto;
   border-radius: 10px;
 }
-header nav .menuList {
+header .nav__menuList {
   display: none;
 }
-header nav .menuList li a, header nav .menuList a:visited {
+header .nav__menuList li a, header .nav__menuList a:visited {
   color: #e5fe04;
   text-decoration: none;
   text-transform: uppercase;
 }
-header nav .menuList li a:hover {
+header .nav__menuList li a:hover {
   color: #fff;
   text-decoration: underline;
 }
-header nav .fa-solid {
+header .nav__icons {
   color: #e5fe04;
   margin: 10px;
 }
-header nav .fa-xmark {
+header .nav--xmark {
   display: none;
   color: #e5fe04;
   cursor: pointer;
 }
 
 @media screen and (max-width: 900px) {
-  header nav {
+  header .nav {
     justify-content: space-around;
   }
 }
 @media screen and (min-width: 650px) {
-  header nav {
+  header .nav {
     display: flex;
     justify-content: space-between;
     background: linear-gradient(130deg, #202020 22%, #fff 22% 23%, #e5fe04 23% 100%);
@@ -63,59 +63,59 @@ header nav .fa-xmark {
     padding: 10px;
     font-size: calc(0.5rem + 1vw);
   }
-  header nav img {
+  header .nav__logo {
     margin: 0;
   }
-  header nav .menuList {
+  header .nav__menuList {
     display: flex;
     justify-content: space-between;
     width: 70%;
   }
-  header nav .menuList li a, header nav .menuList a:visited {
+  header .nav__menuList li a, header .nav__menuList a:visited {
     color: #202020;
   }
-  header nav .fa-solid {
+  header .nav__icons {
     display: none;
   }
 }
-main {
+.main {
   background-color: #202020;
 }
-main .teamPhoto {
+.main__teamPhoto {
   width: 70%;
   border-radius: 5px;
   text-align: center;
 }
-main .teamPresentation {
+.main__teamPresentation {
   display: flex;
   flex-direction: row;
   padding: 15px;
 }
-main .teamPresentation h1 {
+.main__teamPresentation h1 {
   font-size: 2rem;
   color: #fff;
 }
-main .teamPresentation p {
+.main__teamPresentation p {
   color: #fff;
 }
-main .teamPresentation .motoPhoto {
+.main__motoPhoto {
   display: none;
 }
 
 @media screen and (min-width: 650px) {
-  .teamPresentation {
+  .main__teamPresentation {
     display: flex;
     flex-direction: row;
     padding: 15px;
   }
-  .teamPresentation h1 {
+  .main__teamPresentation h1 {
     font-size: 2rem;
     color: #fff;
   }
-  .teamPresentation p {
+  .main__teamPresentation p {
     color: #fff;
   }
-  .teamPresentation .motoPhoto {
+  .main__motoPhoto {
     width: 30%;
     border-radius: 5px;
     box-shadow: 150px #7d7d7d;
