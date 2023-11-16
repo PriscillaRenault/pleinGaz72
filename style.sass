@@ -18,7 +18,7 @@ $neutral-0: #fff
 
 //header
 header
-    //background-color: $neutral-900
+    background-color: $neutral-900
     margin-bottom: 1.5rem
     nav
         background: $neutral-900  
@@ -28,8 +28,9 @@ header
 
         img
             width: 7rem
-            height: 5rem
-            margin: auto
+            height: 4rem
+            margin: 5px auto
+            border-radius: 10px 
 
         .menuList
             display: none
@@ -49,7 +50,16 @@ header
             display: none
             color: #e5fe04    
             cursor: pointer
-    
+
+
+
+@media screen and (max-width: 900px) 
+    header
+        nav
+            justify-content: space-around
+
+
+
 @media screen and (min-width: 650px) 
     header
         nav
@@ -72,10 +82,5 @@ header
 
             .fa-solid
                 display: none
-
-@media screen and (max-width: 900px) 
-    header
-        nav
-            justify-content: space-around
 
 

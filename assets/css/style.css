@@ -12,6 +12,7 @@ ol, ul {
 }
 
 header {
+  background-color: #202020;
   margin-bottom: 1.5rem;
 }
 header nav {
@@ -22,8 +23,9 @@ header nav {
 }
 header nav img {
   width: 7rem;
-  height: 5rem;
-  margin: auto;
+  height: 4rem;
+  margin: 5px auto;
+  border-radius: 10px;
 }
 header nav .menuList {
   display: none;
@@ -47,6 +49,11 @@ header nav .fa-xmark {
   cursor: pointer;
 }
 
+@media screen and (max-width: 900px) {
+  header nav {
+    justify-content: space-around;
+  }
+}
 @media screen and (min-width: 650px) {
   header nav {
     display: flex;
@@ -69,10 +76,5 @@ header nav .fa-xmark {
   }
   header nav .fa-solid {
     display: none;
-  }
-}
-@media screen and (max-width: 900px) {
-  header nav {
-    justify-content: space-around;
   }
 }
