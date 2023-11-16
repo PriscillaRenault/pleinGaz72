@@ -4,28 +4,38 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./assets/css/style.css" />
-
+        <script
+            src="https://kit.fontawesome.com/f30ebbf9c0.js"
+            crossorigin="anonymous"
+        ></script>
         <title>Document</title>
     </head>
     <body>
         <!-- NavBar -->
         <header>
-            <img
-                src="./assets/LogoTeam.jpeg"
-                alt="logo Team Plein Gaz 72"
-                class="logo"
-            />
-
-            <!-- burger menu -->
-
-            <!-- classic menu -->
-            <nav class="classic">
-                <ul>
-                    <li id="home">Accueil</li>
-                    <li id="team">L'Equipe</li>
-                    <li id="shop">Le Shop</li>
-                    <li id="Events">Nos évènements</li>
+            <nav id="nav">
+                <img
+                    src="./assets/LogoTeam.jpeg"
+                    alt="logo Team Plein Gaz 72"
+                    class="logo"
+                />
+                <!-- Menu -->
+                <ul class="menuList js-menuList">
+                    <li>
+                        <a href="index.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="team.html">L'équipe</a>
+                    </li>
+                    <li>
+                        <a href="shop.html">Le shop</a>
+                    </li>
+                    <li>
+                        <a href="events.html">Nos évènements</a>
+                    </li>
                 </ul>
+                <i class="fa-solid fa-bars js-burgerOpen"></i>
+                <i class="fa-solid fa-xmark js-burgerClose"></i>
             </nav>
         </header>
 
