@@ -1,116 +1,19 @@
 //TODO structurer tous les fichiers sass en dossier
-// Reset styles
-*
-    padding: 0
-    margin: 0
 
-body
-    line-height: 1.2
+@use "base/reset"
 
-ol, ul
-    list-style: none
+@use "components/_header"
 
-//colors
-$neutral-900 : #202020
-$neutral-500 : #7d7d7d
-$primaryColor : #e5fe04
-$neutral-0: #fff
-
-
-//header
-header
-    background-color: $neutral-900
-    margin-bottom: 0.3rem
-    nav
-        background: $neutral-900  
-        display: flex
-        justify-content: space-between
-        align-items: center
-
-        .logo
-            width: 7rem
-            height: 4rem
-            margin: 5px auto
-            border-radius: 10px 
-
-        .menuList
-            display: none
-            li a, a:visited
-                color: $primaryColor
-                text-decoration: none
-                text-transform: uppercase
-            li a:hover
-                color: $neutral-0
-                text-decoration: underline
-
-        .fa-solid
-            color: $primaryColor
-            margin: 10px
-        
-        .fa-xmark
-            display: none
-            color: #e5fe04    
-            cursor: pointer
-// main
-main
-    background-color: $neutral-900
-    .teamPhoto
-        width: 70%
-        border-radius: 5px
-        text-align: center
-
-    .teamPresentation
-        display: flex
-        flex-direction: row
-        padding: 15px
-        h1
-            font-size: 2rem
-            color: $neutral-0
-        p
-            color: $neutral-0
-        .motoPhoto
-            display: none
+@use "components/home"
 
 
 
-@media screen and (max-width: 900px) 
-    header
-        nav
-            justify-content: space-around
 
 
 
-@media screen and (min-width: 650px) 
-    header
-        nav
-            display: flex
-            justify-content: space-between
-            background: linear-gradient(130deg, $neutral-900 22%,  $neutral-0 22% 23%, $primaryColor 23% 100%)
-            align-items: center
-            padding: 10px
-            font-size: calc( 0.5rem + 1vw )
-            
-            img
-                margin: 0
-            .menuList
-                display: flex
-                justify-content: space-between
-                width: 70%
-                li a, a:visited
-                    color: $neutral-900
-            .fa-solid
-                display: none
-    .teamPresentation
-        display: flex
-        flex-direction: row
-        padding: 15px
-        h1
-            font-size: 2rem
-            color: $neutral-0
-        p
-            color: $neutral-0
-        .motoPhoto
-            width: 30%
-            border-radius: 5px
-            box-shadow: 150px $neutral-500
+
+
+
+
+
 

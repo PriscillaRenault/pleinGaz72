@@ -49,30 +49,6 @@ header nav .fa-xmark {
   cursor: pointer;
 }
 
-main {
-  background-color: #202020;
-}
-main .teamPhoto {
-  width: 70%;
-  border-radius: 5px;
-  text-align: center;
-}
-main .teamPresentation {
-  display: flex;
-  flex-direction: row;
-  padding: 15px;
-}
-main .teamPresentation h1 {
-  font-size: 2rem;
-  color: #fff;
-}
-main .teamPresentation p {
-  color: #fff;
-}
-main .teamPresentation .motoPhoto {
-  display: none;
-}
-
 @media screen and (max-width: 900px) {
   header nav {
     justify-content: space-around;
@@ -101,6 +77,32 @@ main .teamPresentation .motoPhoto {
   header nav .fa-solid {
     display: none;
   }
+}
+main {
+  background-color: #202020;
+}
+main .teamPhoto {
+  width: 70%;
+  border-radius: 5px;
+  text-align: center;
+}
+main .teamPresentation {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+}
+main .teamPresentation h1 {
+  font-size: 2rem;
+  color: #fff;
+}
+main .teamPresentation p {
+  color: #fff;
+}
+main .teamPresentation .motoPhoto {
+  display: none;
+}
+
+@media screen and (min-width: 650px) {
   .teamPresentation {
     display: flex;
     flex-direction: row;

@@ -1,0 +1,62 @@
+@use "../utils/_main" as utils
+
+header
+    background-color: utils.$neutral-900
+    margin-bottom: 0.3rem
+    nav
+        background: utils.$neutral-900  
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        .logo
+            width: 7rem
+            height: 4rem
+            margin: 5px auto
+            border-radius: 10px 
+
+        .menuList
+            display: none
+            li a, a:visited
+                color: utils.$primaryColor
+                text-decoration: none
+                text-transform: uppercase
+            li a:hover
+                color: utils.$neutral-0
+                text-decoration: underline
+
+        .fa-solid
+            color: utils.$primaryColor
+            margin: 10px
+        
+        .fa-xmark
+            display: none
+            color: utils.$primaryColor  
+            cursor: pointer
+
+@media screen and (max-width: 900px) 
+    header
+        nav
+            justify-content: space-around
+
+
+@media screen and (min-width: 650px) 
+    header
+        nav
+            display: flex
+            justify-content: space-between
+            background: linear-gradient(130deg, utils.$neutral-900 22%,  utils.$neutral-0 22% 23%, utils.$primaryColor 23% 100%)
+            align-items: center
+            padding: 10px
+            font-size: calc( 0.5rem + 1vw )
+            
+            img
+                margin: 0
+            .menuList
+                display: flex
+                justify-content: space-between
+                width: 70%
+                li a, a:visited
+                    color: utils.$neutral-900
+            .fa-solid
+                display: none
