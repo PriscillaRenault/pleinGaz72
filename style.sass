@@ -13,7 +13,7 @@ ol, ul
 $neutral-900 : #202020
 $neutral-500 : #7d7d7d
 $primaryColor : #e5fe04
-$neutral-0: #e8e8e8
+$neutral-0: #fff
 
 
 //header
@@ -27,8 +27,8 @@ header
         align-items: center
 
         img
-            width: 10rem
-            height: 7rem
+            width: 7rem
+            height: 5rem
             margin: auto
 
         .menuList
@@ -47,8 +47,6 @@ header
         
         .fa-xmark
             display: none
-
-
             color: #e5fe04    
             cursor: pointer
     
@@ -56,7 +54,8 @@ header
     header
         nav
             display: flex
-            justify-content: space-around
+            justify-content: space-between
+            background: linear-gradient(130deg, $neutral-900 22%,  $neutral-0 22% 23%, $primaryColor 23% 100%)
             align-items: center
             padding: 10px
             font-size: calc( 0.5rem + 1vw )
@@ -67,10 +66,16 @@ header
                 display: flex
                 justify-content: space-between
                 width: 70%
+                li a, a:visited
+                    color: $neutral-900
             
 
             .fa-solid
                 display: none
 
+@media screen and (max-width: 900px) 
+    header
+        nav
+            justify-content: space-around
 
 
