@@ -1,10 +1,15 @@
 @use "../utils/_main" as utils
 .main
     background-color: utils.$neutral-900
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 1rem
     &__teamPhoto
-        width: 70%
+        width: 80%
         border-radius: 5px
         text-align: center
+        box-shadow: 10px 10px 5px rgba(0,0,0,0.20)
 
     &__teamPresentation
         display: flex
@@ -13,22 +18,27 @@
         h1
             font-size: 2rem
             color: utils.$neutral-0
+            text-align: center
         p
             color: utils.$neutral-0
+            text-align: center
     &__motoPhoto
         display: none
 @media screen and (min-width: 650px) 
     .main
+        display: flex
+        &__teamPhoto
+            width: 100%
+
         &__teamPresentation
             display: flex
             flex-direction: row
             padding: 15px
-            h1
-                font-size: 2rem
-                color: utils.$neutral-0
-            p
-                color: utils.$neutral-0
+            div
+                margin-right: 15px
+
         &__motoPhoto
+            display: block
             width: 30%
             border-radius: 5px
             box-shadow: 150px utils.$neutral-500

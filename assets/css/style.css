@@ -58,7 +58,7 @@ header .nav--xmark {
   header .nav {
     display: flex;
     justify-content: space-between;
-    background: linear-gradient(130deg, #202020 22%, #fff 22% 23%, #e5fe04 23% 100%);
+    background: linear-gradient(130deg, #202020 24%, #fff 24% 25%, #e5fe04 25% 100%);
     align-items: center;
     padding: 10px;
     font-size: calc(0.5rem + 1vw);
@@ -80,11 +80,16 @@ header .nav--xmark {
 }
 .main {
   background-color: #202020;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
 }
 .main__teamPhoto {
-  width: 70%;
+  width: 80%;
   border-radius: 5px;
   text-align: center;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
 }
 .main__teamPresentation {
   display: flex;
@@ -94,30 +99,40 @@ header .nav--xmark {
 .main__teamPresentation h1 {
   font-size: 2rem;
   color: #fff;
+  text-align: center;
 }
 .main__teamPresentation p {
   color: #fff;
+  text-align: center;
 }
 .main__motoPhoto {
   display: none;
 }
 
 @media screen and (min-width: 650px) {
+  .main {
+    display: flex;
+  }
+  .main__teamPhoto {
+    width: 100%;
+  }
   .main__teamPresentation {
     display: flex;
     flex-direction: row;
     padding: 15px;
   }
-  .main__teamPresentation h1 {
-    font-size: 2rem;
-    color: #fff;
-  }
-  .main__teamPresentation p {
-    color: #fff;
+  .main__teamPresentation div {
+    margin-right: 15px;
   }
   .main__motoPhoto {
+    display: block;
     width: 30%;
     border-radius: 5px;
     box-shadow: 150px #7d7d7d;
   }
+}
+.footer {
+  background-color: #e5fe04;
+  display: flex;
+  display: flex;
 }
