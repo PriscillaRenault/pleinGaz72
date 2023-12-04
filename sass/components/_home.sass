@@ -2,9 +2,10 @@
 .main
     background-color: utils.$neutral-900
     &__teamPhoto
-        width: 70%
-        border-radius: 5px
+        width: 100%
+
         text-align: center
+
 
     &__teamPresentation
         display: flex
@@ -18,17 +19,33 @@
     &__motoPhoto
         display: none
 @media screen and (min-width: 650px) 
+    body
+        min-height: 100%
     .main
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 15px 0
+        margin-bottom: 5px
+
+        &__teamPhoto
+            width: 70%
+            border-radius: 5px
+            margin: 10px
+
         &__teamPresentation
             display: flex
             flex-direction: row
-            padding: 15px
+            padding: 2rem
             h1
                 font-size: 2rem
                 color: utils.$neutral-0
+                padding: 0 2rem
             p
                 color: utils.$neutral-0
+                padding: 1rem 2rem
         &__motoPhoto
             width: 30%
             border-radius: 5px
             box-shadow: 150px utils.$neutral-500
+            display: block
