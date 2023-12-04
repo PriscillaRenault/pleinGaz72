@@ -4,7 +4,8 @@ header
     background-color: utils.$neutral-900
     margin-bottom: 0.3rem
     .nav
-        background: utils.$neutral-900  
+        background: utils.$neutral-900
+        height: 5rem
         display: flex
         justify-content: space-between
         align-items: center
@@ -12,11 +13,12 @@ header
         &__logo
             width: 7rem
             height: 4rem
-            margin: 0 auto
+            padding: 2px, 5px
             border-radius: 10px 
 
         &__menuList
             display: none
+            padding: 0 1rem 0 0
             li a, a:visited
                 color: utils.$primaryColor
                 text-decoration: none
@@ -47,10 +49,9 @@ header
             justify-content: space-between
             background: linear-gradient(130deg, utils.$neutral-900 24%,  utils.$neutral-0 24% 25%, utils.$primaryColor 25% 100%)
             align-items: center
-            padding: 10px
             font-size: calc( 0.5rem + 1vw )
             &__logo
-                margin: 0
+                padding: 0.5rem 1rem
             &__menuList
                 display: flex
                 justify-content: space-between

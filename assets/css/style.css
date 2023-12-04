@@ -17,6 +17,7 @@ header {
 }
 header .nav {
   background: #202020;
+  height: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,11 +25,12 @@ header .nav {
 header .nav__logo {
   width: 7rem;
   height: 4rem;
-  margin: 0 auto;
+  padding: 2px, 5px;
   border-radius: 10px;
 }
 header .nav__menuList {
   display: none;
+  padding: 0 1rem 0 0;
 }
 header .nav__menuList li a, header .nav__menuList a:visited {
   color: #e5fe04;
@@ -60,11 +62,10 @@ header .nav--xmark {
     justify-content: space-between;
     background: linear-gradient(130deg, #202020 24%, #fff 24% 25%, #e5fe04 25% 100%);
     align-items: center;
-    padding: 10px;
     font-size: calc(0.5rem + 1vw);
   }
   header .nav__logo {
-    margin: 0;
+    padding: 0.5rem 1rem;
   }
   header .nav__menuList {
     display: flex;
@@ -86,6 +87,7 @@ header .nav--xmark {
   padding: 1rem;
 }
 .main__teamPhoto {
+  width: 100%;
   width: 80%;
   border-radius: 5px;
   text-align: center;
@@ -110,8 +112,21 @@ header .nav--xmark {
 }
 
 @media screen and (min-width: 650px) {
+  body {
+    min-height: 100%;
+  }
   .main {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+    margin-bottom: 5px;
+    display: flex;
+  }
+  .main__teamPhoto {
+    width: 70%;
+    border-radius: 5px;
+    margin: 10px;
   }
   .main__teamPhoto {
     width: 100%;
@@ -119,7 +134,17 @@ header .nav--xmark {
   .main__teamPresentation {
     display: flex;
     flex-direction: row;
+    padding: 2rem;
     padding: 15px;
+  }
+  .main__teamPresentation h1 {
+    font-size: 2rem;
+    color: #fff;
+    padding: 0 2rem;
+  }
+  .main__teamPresentation p {
+    color: #fff;
+    padding: 1rem 2rem;
   }
   .main__teamPresentation div {
     margin-right: 15px;
@@ -129,10 +154,25 @@ header .nav--xmark {
     width: 30%;
     border-radius: 5px;
     box-shadow: 150px #7d7d7d;
+    display: block;
   }
 }
 .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   background-color: #e5fe04;
+  height: 10%;
+}
+.footer__networks__list {
   display: flex;
-  display: flex;
+  flex-direction: row;
+}
+.footer__networks__item img {
+  width: 2rem;
+  height: 2rem;
+  margin: 0.2rem;
+}
+.footer__networks .footer__networks__list li:last-child img {
+  width: 5rem;
 }
