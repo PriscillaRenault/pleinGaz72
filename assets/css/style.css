@@ -7,7 +7,8 @@ body {
   line-height: 1.2;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
@@ -15,67 +16,68 @@ header {
   background-color: #202020;
   margin-bottom: 0.3rem;
 }
-header .nav {
+
+.nav {
   background: #202020;
-  height: 5rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  height: 5rem;
 }
-header .nav__logo {
-  width: 7rem;
+.nav__logo {
+  width: auto;
   height: 4rem;
-  padding: 2px, 5px;
   border-radius: 10px;
 }
-header .nav__menuList {
+.nav__menuList {
   display: none;
   padding: 0 1rem 0 0;
 }
-header .nav__menuList li a, header .nav__menuList a:visited {
+.nav__menuList li a,
+.nav__menuList a:visited {
   color: #e5fe04;
   text-decoration: none;
   text-transform: uppercase;
 }
-header .nav__menuList li a:hover {
+.nav__menuList li a:hover {
   color: #fff;
   text-decoration: underline;
 }
-header .nav__icons {
+.nav__icons--bars {
   color: #e5fe04;
-  margin: 10px;
+  width: auto;
+  cursor: pointer;
 }
-header .nav--xmark {
+.nav__icons--xmark {
   display: none;
   color: #e5fe04;
   cursor: pointer;
 }
 
 @media screen and (max-width: 900px) {
-  header .nav {
+  .nav {
     justify-content: space-around;
   }
 }
 @media screen and (min-width: 650px) {
-  header .nav {
-    display: flex;
+  .nav {
     justify-content: space-between;
     background: linear-gradient(130deg, #202020 24%, #fff 24% 25%, #e5fe04 25% 100%);
     align-items: center;
     font-size: calc(0.5rem + 1vw);
   }
-  header .nav__logo {
+  .nav__logo {
     padding: 0.5rem 1rem;
   }
-  header .nav__menuList {
+  .nav__menuList {
     display: flex;
     justify-content: space-between;
     width: 70%;
   }
-  header .nav__menuList li a, header .nav__menuList a:visited {
+  .nav li a,
+  .nav a:visited {
     color: #202020;
   }
-  header .nav__icons {
+  .nav__icons {
     display: none;
   }
 }
@@ -98,14 +100,13 @@ header .nav--xmark {
   flex-direction: row;
   padding: 15px;
 }
-.main__teamPresentation h1 {
-  font-size: 2rem;
-  color: #fff;
-  text-align: center;
-}
+.main__teamPresentation h1,
 .main__teamPresentation p {
   color: #fff;
   text-align: center;
+}
+.main__teamPresentation h1 {
+  font-size: 2rem;
 }
 .main__motoPhoto {
   display: none;
@@ -121,21 +122,17 @@ header .nav--xmark {
     align-items: center;
     padding: 15px 0;
     margin-bottom: 5px;
-    display: flex;
   }
   .main__teamPhoto {
     width: 70%;
     border-radius: 5px;
     margin: 10px;
-  }
-  .main__teamPhoto {
-    width: 100%;
+    display: flex;
   }
   .main__teamPresentation {
     display: flex;
     flex-direction: row;
     padding: 2rem;
-    padding: 15px;
   }
   .main__teamPresentation h1 {
     font-size: 2rem;
@@ -164,17 +161,17 @@ header .nav--xmark {
   background-color: #e5fe04;
   height: 10%;
 }
-.footer__networks__list {
+.footer__networks__list li:last-child img {
+  width: 5rem;
+}
+.footer__networks, .footer__list {
   display: flex;
   flex-direction: row;
 }
-.footer__networks__item img {
+.footer__item img {
   width: 2rem;
   height: 2rem;
   margin: 0.2rem;
-}
-.footer__networks .footer__networks__list li:last-child img {
-  width: 5rem;
 }
 
 .construction {
@@ -184,11 +181,10 @@ header .nav--xmark {
   flex-direction: column;
   align-items: center;
 }
-.construction__title {
+.construction__title, .construction__icon {
   color: #fff;
 }
 .construction__icon {
-  color: #fff;
   height: 150px;
   width: 5rem;
 }

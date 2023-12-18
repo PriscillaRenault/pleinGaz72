@@ -1,0 +1,77 @@
+@use '../utils/_main' as utils;
+
+header {
+  background-color: utils.$neutral-900;
+  margin-bottom: 0.3rem;
+}
+.nav {
+  background: utils.$neutral-900;
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+
+  &__logo {
+    width: auto;
+    height: 4rem;
+    border-radius: 10px;
+  }
+  &__menuList {
+    display: none;
+    padding: 0 1rem 0 0;
+    li a,
+    a:visited {
+      color: utils.$primaryColor;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    li a:hover {
+      color: utils.$neutral-0;
+      text-decoration: underline;
+    }
+  }
+  &__icons--bars {
+    color: utils.$primaryColor;
+    width: auto;
+    cursor: pointer;
+  }
+
+  &__icons--xmark {
+    display: none;
+    color: utils.$primaryColor;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 900px) {
+  .nav {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .nav {
+    justify-content: space-between;
+    background: linear-gradient(
+      130deg,
+      utils.$neutral-900 24%,
+      utils.$neutral-0 24% 25%,
+      utils.$primaryColor 25% 100%
+    );
+    align-items: center;
+    font-size: calc(0.5rem + 1vw);
+    &__logo {
+      padding: 0.5rem 1rem;
+    }
+    &__menuList {
+      display: flex;
+      justify-content: space-between;
+      width: 70%;
+    }
+    li a,
+    a:visited {
+      color: utils.$neutral-900;
+    }
+    &__icons {
+      display: none;
+    }
+  }
+}
