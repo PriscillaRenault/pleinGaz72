@@ -38,8 +38,7 @@ header {
 .icons--bars,
 .icons--xmark {
   color: utils.$primaryColor;
-  width: 2rem;
-  margin: 10px 0;
+  margin: 25px;
 }
 
 @media screen and (min-width: 650px) {
@@ -59,15 +58,12 @@ header {
     &__menuList {
       display: flex;
       justify-content: space-between;
+      color: utils.$neutral-900;
       width: 70%;
     }
     li a,
     a:visited {
       color: utils.$neutral-900;
     }
-  }
-  .icons--bars,
-  .icons--xmark {
-    display: none;
   }
 }

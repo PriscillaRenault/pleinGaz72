@@ -50,8 +50,7 @@ header {
 .icons--bars,
 .icons--xmark {
   color: #e5fe04;
-  width: 2rem;
-  margin: 10px 0;
+  margin: 25px;
 }
 
 @media screen and (min-width: 650px) {
@@ -67,15 +66,12 @@ header {
   .nav__menuList {
     display: flex;
     justify-content: space-between;
+    color: #202020;
     width: 70%;
   }
   .nav li a,
   .nav a:visited {
     color: #202020;
-  }
-  .icons--bars,
-  .icons--xmark {
-    display: none;
   }
 }
 .main {
@@ -157,6 +153,7 @@ header {
   justify-content: space-between;
   background-color: #e5fe04;
   height: 10%;
+  margin-top: 10px;
 }
 .footer__networks__list li:last-child img {
   width: 5rem;
