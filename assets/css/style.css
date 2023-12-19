@@ -18,46 +18,42 @@ header {
 }
 
 .nav {
-  background: #202020;
   display: flex;
   justify-content: space-between;
+  background: #202020;
   height: 5rem;
 }
 .nav__logo {
   width: auto;
+  margin: 0.5rem;
   height: 4rem;
   border-radius: 10px;
 }
-.nav__menuList {
-  display: none;
-  padding: 0 1rem 0 0;
-}
-.nav__menuList li a,
-.nav__menuList a:visited {
+.nav li,
+.nav a {
   color: #e5fe04;
+  transition: 0.7s ease;
+}
+.nav li a,
+.nav a:visited {
   text-decoration: none;
   text-transform: uppercase;
 }
-.nav__menuList li a:hover {
+.nav li a:hover {
   color: #fff;
   text-decoration: underline;
 }
-.nav__icons--bars {
-  color: #e5fe04;
-  width: auto;
-  cursor: pointer;
-}
-.nav__icons--xmark {
+.nav .inactive {
   display: none;
-  color: #e5fe04;
-  cursor: pointer;
 }
 
-@media screen and (max-width: 900px) {
-  .nav {
-    justify-content: space-around;
-  }
+.icons--bars,
+.icons--xmark {
+  color: #e5fe04;
+  width: 2rem;
+  margin: 10px 0;
 }
+
 @media screen and (min-width: 650px) {
   .nav {
     justify-content: space-between;
@@ -77,7 +73,8 @@ header {
   .nav a:visited {
     color: #202020;
   }
-  .nav__icons {
+  .icons--bars,
+  .icons--xmark {
     display: none;
   }
 }

@@ -5,46 +5,41 @@ header {
   margin-bottom: 0.3rem;
 }
 .nav {
-  background: utils.$neutral-900;
   display: flex;
   justify-content: space-between;
+  background: utils.$neutral-900;
   height: 5rem;
 
   &__logo {
     width: auto;
+    margin: 0.5rem;
     height: 4rem;
     border-radius: 10px;
   }
-  &__menuList {
-    display: none;
-    padding: 0 1rem 0 0;
-    li a,
-    a:visited {
-      color: utils.$primaryColor;
-      text-decoration: none;
-      text-transform: uppercase;
-    }
-    li a:hover {
-      color: utils.$neutral-0;
-      text-decoration: underline;
-    }
-  }
-  &__icons--bars {
+  li,
+  a {
     color: utils.$primaryColor;
-    width: auto;
-    cursor: pointer;
+    transition: 0.7s ease;
   }
-
-  &__icons--xmark {
+  li a,
+  a:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  li a:hover {
+    color: utils.$neutral-0;
+    text-decoration: underline;
+  }
+  .inactive {
     display: none;
-    color: utils.$primaryColor;
-    cursor: pointer;
   }
 }
-@media screen and (max-width: 900px) {
-  .nav {
-    justify-content: space-around;
-  }
+
+.icons--bars,
+.icons--xmark {
+  color: utils.$primaryColor;
+  width: 2rem;
+  margin: 10px 0;
 }
 
 @media screen and (min-width: 650px) {
@@ -70,8 +65,9 @@ header {
     a:visited {
       color: utils.$neutral-900;
     }
-    &__icons {
-      display: none;
-    }
+  }
+  .icons--bars,
+  .icons--xmark {
+    display: none;
   }
 }

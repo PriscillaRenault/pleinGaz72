@@ -14,9 +14,8 @@
           alt="logo Team Plein Gaz 72"
           class="nav__logo"
         />
-
         <!-- Menu -->
-        <ul class="nav__menuList js-menuList">
+        <ul class="nav__menuList inactive" id="js-menuList">
           <li>
             <a href="index.html">Accueil</a>
           </li>
@@ -30,9 +29,16 @@
             <a href="events.html">Nos évènements</a>
           </li>
         </ul>
-        <i class="fa-solid fa-bars nav__icons--bars js-burgerOpen"></i>
-        <i class="fa-solid fa-xmark nav__icons--xmark js-burgerClose"></i>
+        <i class="fa-solid fa-bars icons--bars" id="js-Open"></i>
+
+        <i class="fa-solid fa-xmark icons--xmark inactive" id="js-Close"></i>
       </nav>
     </header>
+
+    <script
+      src="https://kit.fontawesome.com/f30ebbf9c0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
   </body>
 </html>
