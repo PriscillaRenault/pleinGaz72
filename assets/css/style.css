@@ -151,7 +151,7 @@ header {
     display: block;
     width: 30%;
     border-radius: 5px;
-    box-shadow: 150px #7d7d7d;
+    box-shadow: 15px 5px 5px #7d7d7d;
     display: block;
   }
 }
