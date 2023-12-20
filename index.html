@@ -4,14 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Graduate&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/f30ebbf9c0.js"
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
+    <title>Plein Gaz 72</title>
   </head>
   <body>
-    <div w3-include-html="header.html"></div>
+    <header>
+      <nav class="nav">
+        <!-- logo -->
+        <img
+          src="./assets/image/LogoTeam (1).svg"
+          alt="logo Team Plein Gaz 72"
+          class="nav__logo"
+        />
+        <!-- Menu -->
+        <ul class="nav__menuList inactive" id="js-menuList">
+          <li>
+            <a href="index.html">Accueil</a>
+          </li>
+          <li>
+            <a href="events.html">Nos évènements</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <!-- icone burger menu -->
+        <i class="fa-solid fa-bars icons--bars fa-xl" id="js-Open"></i>
+
+        <i
+          class="fa-solid fa-xmark icons--xmark fa-xl inactive"
+          id="js-Close"
+        ></i>
+      </nav>
+    </header>
 
     <!-- main -->
     <main class="main">
@@ -25,7 +59,15 @@
         <div class="main__teamPresentation">
           <div>
             <h1>Présentation de l'association</h1>
-            <p>voici notre association</p>
+            <br />
+            <p>
+              L'objectif du Team Plein Gaz 72 est d'évoluer sur les courses du
+              championnat d'Europe d'endurance en catégorie SuperStock
+            </p>
+            <br />
+            <p>
+              Notre team sera présent au 24h du Mans moto du 18 zu 21 avril 2024
+            </p>
           </div>
 
           <img
@@ -36,6 +78,34 @@
         </div>
       </div>
     </main>
-    <div w3-include-html="footer.html"></div>
+    <!-- footer -->
+    <footer class="footer">
+      <!-- réseaux -->
+      <div class="networks">
+        <ul class="networks__list">
+          <li class="networks__item">
+            <img
+              src="assets/image/icons8-facebook-nouveau-50.png"
+              alt="Facebook"
+            />
+          </li>
+          <li class="networks__item">
+            <img src="assets/image/icons8-instagram-50.png" alt="instagram" />
+          </li>
+          <li class="networks__item">
+            <img
+              src="assets/image/Logo-Leetchi-noir.png"
+              alt="leetchi"
+              class="networks__item--leetchi"
+            />
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/f30ebbf9c0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
   </body>
 </html>

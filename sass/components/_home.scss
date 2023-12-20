@@ -22,9 +22,11 @@
     p {
       color: utils.$neutral-0;
       text-align: center;
+      font-family: utils.$text;
     }
     h1 {
       font-size: 2rem;
+      font-family: utils.$title;
     }
   }
   &__motoPhoto {
@@ -40,7 +42,6 @@
     flex-direction: column;
     align-items: center;
     padding: 15px 0;
-    margin-bottom: 5px;
 
     &__teamPhoto {
       width: 70%;

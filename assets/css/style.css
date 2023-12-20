@@ -14,7 +14,7 @@ ul {
 
 header {
   background-color: #202020;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
 }
 
 .nav {
@@ -25,13 +25,14 @@ header {
 }
 .nav__logo {
   width: auto;
-  margin: 0.5rem;
+  margin: auto;
   height: 4rem;
   border-radius: 10px;
 }
 .nav li,
 .nav a {
   color: #e5fe04;
+  font-family: "Graduate", serif;
   transition: 0.7s ease;
 }
 .nav li a,
@@ -61,7 +62,8 @@ header {
     font-size: calc(0.5rem + 1vw);
   }
   .nav__logo {
-    padding: 0.5rem 1rem;
+    margin: 0.5rem 1rem;
+    width: 6rem;
   }
   .nav__menuList {
     display: flex;
@@ -72,6 +74,11 @@ header {
   .nav li a,
   .nav a:visited {
     color: #202020;
+  }
+}
+@media screen and (min-width: 850px) {
+  .nav {
+    justify-content: space-around;
   }
 }
 .main {
@@ -97,9 +104,11 @@ header {
 .main__teamPresentation p {
   color: #fff;
   text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 .main__teamPresentation h1 {
   font-size: 2rem;
+  font-family: "Graduate", serif;
 }
 .main__motoPhoto {
   display: none;
@@ -114,7 +123,6 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 15px 0;
-    margin-bottom: 5px;
   }
   .main__teamPhoto {
     width: 70%;
@@ -148,37 +156,16 @@ header {
   }
 }
 .footer {
+  background-color: #e5fe04;
+  height: 7%;
+  margin-top: 0.5rem;
+}
+
+.networks__list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #e5fe04;
-  height: 10%;
-  margin-top: 10px;
 }
-.footer__networks__list li:last-child img {
-  width: 5rem;
-}
-.footer__networks, .footer__list {
-  display: flex;
-  flex-direction: row;
-}
-.footer__item img {
-  width: 2rem;
-  height: 2rem;
-  margin: 0.2rem;
-}
-
-.construction {
-  background-color: #202020;
-  padding: 100px 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.construction__title, .construction__icon {
-  color: #fff;
-}
-.construction__icon {
-  height: 150px;
+.networks__list__networks__list li:last-child img {
   width: 5rem;
 }

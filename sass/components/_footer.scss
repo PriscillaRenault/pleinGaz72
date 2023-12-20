@@ -1,22 +1,15 @@
 @use '../utils/_main' as utils;
 .footer {
+  background-color: utils.$primaryColor;
+  height: 7%;
+  margin-top: 0.5rem;
+}
+.networks__list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: utils.$primaryColor;
-  height: 10%;
-  margin-top: 10px;
+
   &__networks__list li:last-child img {
     width: 5rem;
-  }
-  &__networks,
-  &__list {
-    display: flex;
-    flex-direction: row;
-  }
-  &__item img {
-    width: 2rem;
-    height: 2rem;
-    margin: 0.2rem;
   }
 }

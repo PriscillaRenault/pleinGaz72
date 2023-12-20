@@ -2,7 +2,7 @@
 
 header {
   background-color: utils.$neutral-900;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
 }
 .nav {
   display: flex;
@@ -12,13 +12,14 @@ header {
 
   &__logo {
     width: auto;
-    margin: 0.5rem;
+    margin: auto;
     height: 4rem;
     border-radius: 10px;
   }
   li,
   a {
     color: utils.$primaryColor;
+    font-family: utils.$title;
     transition: 0.7s ease;
   }
   li a,
@@ -53,7 +54,8 @@ header {
     align-items: center;
     font-size: calc(0.5rem + 1vw);
     &__logo {
-      padding: 0.5rem 1rem;
+      margin: 0.5rem 1rem;
+      width: 6rem;
     }
     &__menuList {
       display: flex;
@@ -65,5 +67,11 @@ header {
     a:visited {
       color: utils.$neutral-900;
     }
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .nav {
+    justify-content: space-around;
   }
 }
