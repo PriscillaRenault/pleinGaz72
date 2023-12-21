@@ -57,7 +57,7 @@ header {
 @media screen and (min-width: 650px) {
   .nav {
     justify-content: space-between;
-    background: linear-gradient(130deg, #202020 24%, #fff 24% 25%, #e5fe04 25% 100%);
+    background: linear-gradient(130deg, #202020 24%, #cfcfcf 24% 25%, #e5fe04 25% 100%);
     align-items: center;
     font-size: calc(0.5rem + 1vw);
   }
@@ -81,6 +81,29 @@ header {
     justify-content: space-around;
   }
 }
+body {
+  width: 100%;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #cfcfcf;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+h1,
+p {
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: "Graduate", serif;
+}
+
 .main {
   background-color: #202020;
   display: flex;
@@ -89,40 +112,27 @@ header {
   padding: 1rem;
 }
 .main__teamPhoto {
-  width: 100%;
-  width: 80%;
   border-radius: 5px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.7);
+  border: 2px solid #e5fe04;
+  width: 80%;
   text-align: center;
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
 }
 .main__teamPresentation {
   display: flex;
   flex-direction: row;
-  padding: 15px;
+  padding: 2rem;
 }
-.main__teamPresentation h1,
-.main__teamPresentation p {
-  color: #fff;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-}
-.main__teamPresentation h1 {
-  font-size: 2rem;
-  font-family: "Graduate", serif;
-}
-.main__motoPhoto {
+.main__teamPresentation__motoPhoto {
   display: none;
 }
 
 @media screen and (min-width: 650px) {
-  body {
-    min-height: 100%;
-  }
   .main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15px 0;
+    padding: 5rem 0;
   }
   .main__teamPhoto {
     width: 70%;
@@ -133,6 +143,8 @@ header {
   .main__teamPresentation {
     display: flex;
     flex-direction: row;
+    width: 90%;
+    height: 90%;
     padding: 2rem;
   }
   .main__teamPresentation h1 {
@@ -148,16 +160,25 @@ header {
     margin-right: 15px;
   }
   .main__motoPhoto {
-    display: block;
-    width: 30%;
     border-radius: 5px;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.7);
+    border: 2px solid #e5fe04;
+    align-self: center;
+    width: 30%;
+    height: 50%;
     display: block;
+  }
+}
+@media screen and (min-width: 880px) {
+  .main__motoPhoto {
+    display: flex;
+    width: 70%;
+    height: 50%;
+    align-self: flex-start;
   }
 }
 .footer {
   background-color: #e5fe04;
-  height: 7%;
   margin-top: 0.5rem;
 }
 

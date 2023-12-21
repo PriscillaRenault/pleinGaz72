@@ -1,47 +1,50 @@
 @use '../utils/_main' as utils;
+
+body {
+  @include utils.flux;
+  background-color: utils.$neutral-250;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+h1,
+p {
+  color: utils.$neutral-0;
+  text-align: center;
+  font-family: utils.$text;
+}
+h1 {
+  font-size: 2rem;
+  font-family: utils.$title;
+}
 .main {
   background-color: utils.$neutral-900;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  &__teamPhoto {
-    width: 100%;
 
+  &__teamPhoto {
+    @include utils.img;
     width: 80%;
-    border-radius: 5px;
     text-align: center;
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
   }
   &__teamPresentation {
     display: flex;
     flex-direction: row;
-    padding: 15px;
+    padding: 2rem;
 
-    h1,
-    p {
-      color: utils.$neutral-0;
-      text-align: center;
-      font-family: utils.$text;
+    &__motoPhoto {
+      display: none;
     }
-    h1 {
-      font-size: 2rem;
-      font-family: utils.$title;
-    }
-  }
-  &__motoPhoto {
-    display: none;
   }
 }
 @media screen and (min-width: 650px) {
-  body {
-    min-height: 100%;
-  }
   .main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15px 0;
+    padding: 5rem 0;
 
     &__teamPhoto {
       width: 70%;
@@ -52,6 +55,8 @@
     &__teamPresentation {
       display: flex;
       flex-direction: row;
+      width: 90%;
+      height: 90%;
       padding: 2rem;
 
       h1 {
@@ -68,11 +73,19 @@
       }
     }
     &__motoPhoto {
-      display: block;
+      @include utils.img;
+      align-self: center;
       width: 30%;
-      border-radius: 5px;
-      box-shadow: 5px 5px 5px black;
+      height: 50%;
       display: block;
     }
+  }
+}
+@media screen and (min-width: 880px) {
+  .main__motoPhoto {
+    display: flex;
+    width: 70%;
+    height: 50%;
+    align-self: flex-start;
   }
 }
