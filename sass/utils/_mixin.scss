@@ -1,7 +1,7 @@
 @use '_colors' as colors;
 @mixin img {
   border-radius: 5px;
-  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.7);
+  box-shadow: colors.$shadow;
   border: 2px solid colors.$primaryColor;
 }
 
