@@ -1,4 +1,8 @@
 @use '../utils/_main' as utils;
+
+body {
+  @include utils.flux;
+}
 .main {
   background-color: utils.$neutral-900;
   display: flex;
@@ -6,12 +10,8 @@
   align-items: center;
   padding: 1rem;
   &__teamPhoto {
-    width: 100%;
-
+    @include utils.img;
     width: 80%;
-    border-radius: 5px;
-    text-align: center;
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
   }
   &__teamPresentation {
     display: flex;
@@ -68,11 +68,9 @@
       }
     }
     &__motoPhoto {
+      @include utils.img;
       display: block;
       width: 30%;
-      border-radius: 5px;
-      box-shadow: 15px 5px 5px utils.$neutral-500;
-      display: block;
     }
   }
 }

@@ -1,0 +1,13 @@
+@use '_colors' as colors;
+@mixin img {
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.7);
+  border: 2px solid colors.$primaryColor;
+}
+
+@mixin flux {
+  width: 100%;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}

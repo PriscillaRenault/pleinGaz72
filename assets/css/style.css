@@ -81,6 +81,13 @@ header {
     justify-content: space-around;
   }
 }
+body {
+  width: 100%;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .main {
   background-color: #202020;
   display: flex;
@@ -89,11 +96,10 @@ header {
   padding: 1rem;
 }
 .main__teamPhoto {
-  width: 100%;
-  width: 80%;
   border-radius: 5px;
-  text-align: center;
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.7);
+  border: 2px solid #e5fe04;
+  width: 80%;
 }
 .main__teamPresentation {
   display: flex;
@@ -148,11 +154,11 @@ header {
     margin-right: 15px;
   }
   .main__motoPhoto {
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.7);
+    border: 2px solid #e5fe04;
     display: block;
     width: 30%;
-    border-radius: 5px;
-    box-shadow: 15px 5px 5px #7d7d7d;
-    display: block;
   }
 }
 .footer {
