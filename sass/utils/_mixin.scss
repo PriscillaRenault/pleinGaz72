@@ -2,12 +2,12 @@
 @mixin img {
   border-radius: 5px;
   box-shadow: colors.$shadow;
-  border: 2px solid colors.$primaryColor;
+  border: 2px solid colors.$primary;
 }
 
-@mixin flux {
+@mixin flux($width) {
   width: 100%;
-  max-width: 1300px;
+  max-width: $width;
   margin-left: auto;
   margin-right: auto;
 }

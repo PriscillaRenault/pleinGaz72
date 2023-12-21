@@ -1,6 +1,6 @@
 @use '../utils/_main' as utils;
 .footer {
-  background-color: utils.$primaryColor;
+  background-color: utils.$primary;
   margin-top: 0.5rem;
 }
 .networks__list {
