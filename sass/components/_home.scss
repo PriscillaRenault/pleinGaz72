@@ -17,7 +17,12 @@ h1 {
   font-size: 2rem;
   font-family: utils.$title;
 }
+
+body {
+  background-color: utils.$neutral-250;
+}
 .main {
+  @include utils.flux;
   background-color: utils.$neutral-900;
   display: flex;
   flex-direction: column;
@@ -27,7 +32,6 @@ h1 {
   &__teamPhoto {
     @include utils.img;
     width: 80%;
-    text-align: center;
   }
   &__teamPresentation {
     display: flex;
@@ -55,9 +59,6 @@ h1 {
     &__teamPresentation {
       display: flex;
       flex-direction: row;
-      width: 90%;
-      height: 90%;
-      padding: 2rem;
 
       h1 {
         font-size: 2rem;
@@ -67,25 +68,23 @@ h1 {
       p {
         color: utils.$neutral-0;
         padding: 1rem 2rem;
+        margin: 1rem;
       }
-      div {
-        margin-right: 15px;
-      }
+    }
+    &__divMotoPhoto {
+      display: flex;
+      align-items: center;
     }
     &__motoPhoto {
       @include utils.img;
-      align-self: center;
-      width: 30%;
-      height: 50%;
       display: block;
+      width: auto;
+      height: 10rem;
     }
   }
 }
-@media screen and (min-width: 880px) {
+@media screen and (min-width: 850px) {
   .main__motoPhoto {
-    display: flex;
-    width: 70%;
-    height: 50%;
-    align-self: flex-start;
+    height: 20rem;
   }
 }
