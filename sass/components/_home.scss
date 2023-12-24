@@ -37,7 +37,7 @@ h1 {
     display: none;
   }
 }
-@include media-breakpoint-up(xs) {
+@media screen and (min-width: 650px) {
   .main {
     @include utils.flux(1300px);
     display: flex;

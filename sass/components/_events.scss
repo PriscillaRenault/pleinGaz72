@@ -1,4 +1,7 @@
 @use '../utils/_main' as utils;
-.event {
-  background-color: utils.$neutral-900;
+th {
+  text-transform: uppercase;
+}
+sup {
+  text-transform: lowercase;
 }

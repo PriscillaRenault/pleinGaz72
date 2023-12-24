@@ -51,72 +51,77 @@
         ></i>
       </nav>
     </header>
-    <main class="event">
+    <main class="container bg-secondary">
       <!-- TODO TABLE OF RACE -->
-      <h1>Calendrier Endurance EWC 2024</h1>
+      <div class="table-responsive-sm">
+        <h1 class="p-3 my-2">Calendrier Endurance EWC 2024</h1>
 
-      <table class="table table-striped">
-        <thead class="thead-dark">
-          <tr>
-            <th scope="col"></th>
-            <th scope="col">Date</th>
-            <th scope="col">Course</th>
-            <th scope="col">Lieu</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="table-primary">
-            <th scope="row">1</th>
-            <td>20-21 Avril 2024</td>
-            <td>24 Heures Motos</td>
-            <td>Le Mans - France</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>8 juin 2024</td>
-            <td>8 Heures de Spa</td>
-            <td>Spa - Belgique</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>21 juillet 2024</td>
-            <td>8 Heures de Suzuka</td>
-            <td>Suzuka - Japon</td>
-          </tr>
-          <tr>
-            <th scope="row">4</th>
-            <td>14-15 septembre 2024</td>
-            <td>Bol d'Or</td>
-            <td>Le Castellet - France</td>
-          </tr>
-        </tbody>
-      </table>
+        <div class="container">
+          <div class="table-responsive-md">
+            <table class="table table-secondary">
+              <thead>
+                <tr>
+                  <th scope="col-4 col-md-2 "></th>
+                  <th scope="col justify-content-center">Date</th>
+                  <th scope="col">Course</th>
+                  <th scope="col">Lieu</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-primary">
+                  <th scope="row">1<sup>ère</sup> manche</th>
+                  <td>20-21 Avril 2024</td>
+                  <td>24 Heures Motos</td>
+                  <td>Le Mans - France</td>
+                </tr>
+                <tr>
+                  <th scope="row">2<sup>ème</sup> manche</th>
+                  <td>8 juin 2024</td>
+                  <td>8 Heures de Spa</td>
+                  <td>Spa - Belgique</td>
+                </tr>
+                <tr>
+                  <th scope="row">3<sup>ème</sup> manche</th>
+                  <td>21 juillet 2024</td>
+                  <td>8 Heures de Suzuka</td>
+                  <td>Suzuka - Japon</td>
+                </tr>
+                <tr>
+                  <th scope="row">4<sup>ème</sup> manche</th>
+                  <td>14-15 septembre 2024</td>
+                  <td>Bol d'Or</td>
+                  <td>Le Castellet - France</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </main>
 
     <!-- footer -->
-    <footer class="footer">
-      <!-- réseaux -->
-      <div class="footer__networks">
-        <ul class="footer__networks__list">
-          <li class="footer__networks__item">
-            <img
+    <footer class="container-fluid text-center bg-primary">
+      <ul class="row flex-row justify-content-around align-items-center m-4">
+        <li class="col">
+          <a
+            class=""
+            target="_blank"
+            href="https://www.facebook.com/pleingaz.soixantedouze/?locale=fr_FR"
+            ><img
               src="assets/image/icons8-facebook-nouveau-50.png"
               alt="Facebook"
-            />
-          </li>
-          <li class="footer__networks__item">
-            <img src="assets/image/icons8-instagram-50.png" alt="instagram" />
-          </li>
-          <li class="footer__networks__item">
+              class="w-25"
+          /></a>
+        </li>
+        <li class="col">
+          <a class="" target="_blank" href="#">
             <img
-              src="assets/image/Logo-Leetchi-noir.png"
+              src="assets/image/Logo-Leetchi-mini.png"
               alt="leetchi"
-              class="footer__networks__item--leetchi"
-            />
-          </li>
-        </ul>
-      </div>
-      <!-- TOS -->
+              class="w-25"
+          /></a>
+        </li>
+      </ul>
     </footer>
     <script
       src="https://kit.fontawesome.com/f30ebbf9c0.js"

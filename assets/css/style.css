@@ -179,8 +179,12 @@ h1 {
     margin-right: auto;
   }
 }
-.event {
-  background-color: #202020;
+th {
+  text-transform: uppercase;
+}
+
+sup {
+  text-transform: lowercase;
 }
 
 .footer {
