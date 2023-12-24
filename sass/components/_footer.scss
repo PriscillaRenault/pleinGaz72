@@ -1,14 +1,4 @@
 @use '../utils/_main' as utils;
-.footer {
-  background-color: utils.$primary;
-  margin-top: 0.5rem;
-}
-.networks__list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  &__networks__list li:last-child img {
-    width: 5rem;
-  }
+.networks__logo {
+  width: 2.5rem;
 }
