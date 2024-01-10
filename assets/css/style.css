@@ -52,6 +52,7 @@ header {
 .icons--xmark {
   color: #e5fe04;
   margin: 25px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 650px) {
@@ -189,5 +190,6 @@ sup {
 }
 
 .networks__logo {
-  width: 2.5rem;
+  width: 3rem;
+  cursor: pointer;
 }
