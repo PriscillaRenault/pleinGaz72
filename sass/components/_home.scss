@@ -23,7 +23,6 @@ h1 {
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  margin-bottom: 0.8rem;
 
   &__teamPhoto {
     @include utils.img;
