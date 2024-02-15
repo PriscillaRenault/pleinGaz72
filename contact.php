@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./assets/css/custom.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="../../assets/css/custom.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Graduate&family=Roboto&display=swap" rel="stylesheet" />
@@ -17,7 +17,7 @@
 <body class="flux">
     <!-- Header : fichier scss = header.scss -->
     <?php
-    require "../components/header.php";
+    require "/wamp64/www/pleinGaz72/php/header.php";
     ?>
 
     <main class="container contact bg-dark">
@@ -75,10 +75,10 @@
         </div>
     </main>
     <?php
-    require "../components/footer.php";
+    require "/wamp64/www/pleinGaz72/php/footer.php";
     ?>
     <script src="https://kit.fontawesome.com/f30ebbf9c0.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="../../JS/script.js"></script>
 </body>
 
 </html>

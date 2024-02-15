@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./assets/css/custom.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Graduate&family=Roboto&display=swap" rel="stylesheet" />
@@ -17,12 +17,12 @@
 <body class="flux">
 
     <?php
-    require "./php/components/header.php"
+    require "/wamp64/www/pleinGaz72/php/header.php"
     ?>
 
     <!-- main  fichier scss = home.scss-->
     <main class="main">
-        <img class="main__teamPhoto" src="assets/image/team_paysage.JPG" alt="Tout le team" />
+        <img class="main__teamPhoto" src="/assets/image/team_paysage.JPG" alt="Tout le team" />
 
         <div>
             <div class="main__teamPresentation">
@@ -53,17 +53,17 @@
                     </p>
                 </div>
                 <div class="main__divMotoPhoto">
-                    <img src="assets/image/moto_officiel_paysage.JPG" alt="Moto officielle" class="main__motoPhoto" />
+                    <img src="../../assets/image/moto_officiel_paysage.JPG" alt="Moto officielle" class="main__motoPhoto" />
                 </div>
             </div>
         </div>
     </main>
     <!-- footer fichier footer = footer.scss + bootstrap -->
     <?php
-    require "./php/components/footer.php"
+    require "/wamp64/www/pleinGaz72/php/footer.php"
     ?>
     <script src="https://kit.fontawesome.com/f30ebbf9c0.js" crossorigin="anonymous"></script>
-    <script src="JS/script.js"></script>
+    <script src="/JS/script.js"></script>
 </body>
 
 </html>

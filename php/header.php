@@ -2,17 +2,17 @@
 <header>
     <nav class="nav">
         <!-- logo -->
-        <img src="./assets/image/LogoTeamSVG.svg" alt="logo Team Plein Gaz 72" class="nav__logo" />
+        <img src="../assets/image/LogoTeamSVG.svg" alt="logo Team Plein Gaz 72" class="nav__logo" />
         <!-- Menu -->
         <ul class="nav__menuList inactive" id="js-menuList">
             <li>
-                <a href="../../index.php">Accueil</a>
+                <a href="index.php">Accueil</a>
             </li>
             <li>
-                <a href="/../pages/events.php">Nos évènements</a>
+                <a href="events.php">Nos évènements</a>
             </li>
             <li>
-                <a href="/../pages/contact.php">Contact</a>
+                <a href="contact.php">Contact</a>
             </li>
         </ul>
         <!-- icone burger menu -->

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plein Gaz 72</title>
+    <link rel="icon" type="image/x-icon" href="assets/image/LogoTeamSVG.svg" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/custom.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Graduate&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f30ebbf9c0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="flux">
+    <!-- Header : fichier scss =header.scss -->
+    <header>
+      <nav class="nav">
+        <!-- logo -->
+        <img
+          src="./assets/image/LogoTeamSVG.svg"
+          alt="logo Team Plein Gaz 72"
+          class="nav__logo"
+        />
+        <!-- Menu -->
+        <ul class="nav__menuList inactive" id="js-menuList">
+          <li>
+            <a href="index.html">Accueil</a>
+          </li>
+          <li>
+            <a href="events.html">Nos évènements</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <!-- icone burger menu -->
+        <i class="fa-solid fa-bars icons--bars fa-xl" id="js-Open"></i>
+
+        <i
+          class="fa-solid fa-xmark icons--xmark fa-xl inactive"
+          id="js-Close"
+        ></i>
+      </nav>
+    </header>
+
+    <!-- main  fichier scss = home.scss-->
+    <main class="main">
+      <img
+        class="main__teamPhoto"
+        src="assets/image/team_paysage.JPG"
+        alt="Tout le team"
+      />
+
+      <div>
+        <div class="main__teamPresentation">
+          <div>
+            <h1>Présentation de l'association</h1>
+
+            <br />
+
+            <p>
+              Avant d'être un team, nous sommes des amis. La course n'est pas
+              notre métier mais notre passion. Certains travaillent dans le BTP
+              l'industrie ou la restauration, certains dans la mécanique car la
+              course necessite malgré tout des compétences.
+            </p>
+            <p>
+              L'objectif du Team Plein Gaz 72 est d'évoluer sur les courses du
+              championnat d'Europe d'endurance en catégorie SuperStock.
+            </p>
+            <br />
+            <p>
+              Notre team sera présent aux 24h motos au Mans du 18 au 21 avril
+              2024 pour la premiere session des epreuves d'endurance...
+            </p>
+            <p>
+              « La vraie réussite d’une équipe c’est d’assurer la compétitivité
+              dans la pérennité »
+            </p>
+          </div>
+          <div class="main__divMotoPhoto">
+            <img
+              src="assets/image/moto_officiel_paysage.JPG"
+              alt="Moto officielle"
+              class="main__motoPhoto"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer fichier footer = footer.scss + bootstrap -->
+    <footer class="container-fluid text-center bg-primary mt-2">
+      <ul class="row m-4">
+        <li class="col m-2">
+          <a
+            class=""
+            target="_blank"
+            href="https://www.facebook.com/pleingaz.soixantedouze/?locale=fr_FR"
+            ><img
+              src="assets/image/icons8-facebook-nouveau-50.png"
+              alt="Facebook"
+              class="networks__logo"
+          /></a>
+        </li>
+        <li class="col m-2">
+          <a
+            class=""
+            target="_blank"
+            href="https://www.leetchi.com/fr/c/team-plein-gaz-72--24h-moto-2024-le-mans-8671462?utm_source=native&utm_medium=social_sharing"
+          >
+            <img
+              src="assets/image/Logo-Leetchi-mini.png"
+              alt="leetchi"
+              class="networks__logo"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/f30ebbf9c0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
