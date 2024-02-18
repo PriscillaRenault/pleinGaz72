@@ -22,8 +22,8 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="flux">
-    <!-- Header : fichier scss = header.scss -->
+  <body>
+    <!-- Header : fichier scss =header.scss -->
     <header>
       <nav class="nav">
         <!-- logo -->
@@ -35,10 +35,13 @@
         <!-- Menu -->
         <ul class="nav__menuList inactive" id="js-menuList">
           <li>
-            <a href="index.html">Accueil</a>
+            <a href="../index.html">Accueil</a>
           </li>
           <li>
             <a href="events.html">Nos évènements</a>
+          </li>
+          <li>
+            <a href="pilots.html">Nos pilotes</a>
           </li>
           <li>
             <a href="contact.html">Contact</a>
@@ -53,79 +56,66 @@
         ></i>
       </nav>
     </header>
+    <main class="container bg-dark">
+      <!-- TODO TABLE OF RACE -->
 
-    <main class="container contact bg-dark">
-      <div class="row">
-        <h1 class="p-5">Soutenez-Nous !!!</h1>
-      </div>
+      <h1 class="p-3 my-5">Calendrier Endurance EWC 2024</h1>
+
       <p>
-        Vous souhaitez nous soutenir dans ce projet ? Nous proposons à la vente
-        différents articles :
+        Les courses d'endurance EWC 2024 se dérouleront selon le calendrier ci
+        dessous.
       </p>
-      <div class="row">
-        <ul class="list-group p-3 col col-md-6 mx-auto">
-          <li class="list-group-item bg-dark text-center text-light">
-            T-shirts
-          </li>
-          <li class="list-group-item bg-dark text-center text-light">
-            Stickers
-          </li>
-          <li class="list-group-item bg-dark text-center text-light">
-            Pièces détachées
-          </li>
-        </ul>
-      </div>
-
-      <p class="my-4">
-        Et bien évidemment notre cagnotte
-        <a
-          class=""
-          target="_blank"
-          href="https://www.leetchi.com/fr/c/team-plein-gaz-72--24h-moto-2024-le-mans-8671462?utm_source=native&utm_medium=social_sharing"
-          >LEETCHI</a
-        >
+      <p>
+        De notre coté, nous serons présents uniquement lors des 24 heures Motos.
+        N'hésitez pas à venir nous encourager !!!
       </p>
 
-      <p class="my-4">
-        Pour toute demande, n'hésitez pas à nous contacter via le formulaire ci
-        dessous ou par mail
-        <a href="mailto:pleingaz72@gmail.com"> Plein Gaz 72</a>
-      </p>
       <div class="container">
-        <form
-          method="post"
-          class="col-12 col-md-6 mx-auto p-3 mb-4 bg-light border border-primary rounded"
-        >
-          <div class="form-group row my-3 d-flex align-items-center">
-            <label for="email" class="text-center col-sm-2 col-form-label"
-              >Email :
-            </label>
-            <div class="col-sm-9">
-              <input type="email" id="email" placeholder="email@example.com" />
-            </div>
-            <small class="form-text text-secondary"
-              >Juste pour que l'on puisse vous répondre... Nous ne diffuserons
-              jamais votre email à un tiers.</small
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <table
+              class="col-md-8 mx-auto table table-responsive table-secondary border border-primary mt-5"
             >
+              <thead>
+                <tr class="text-center">
+                  <th>Manche</th>
+                  <th>Date de la Manche</th>
+                  <th>Course</th>
+                  <th>Lieu de la course</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-primary text-center">
+                  <th>1<sup>ère</sup> manche</th>
+                  <td>20-21 Avril 2024</td>
+                  <td>24 Heures Motos</td>
+                  <td>Le Mans - France</td>
+                </tr>
+                <tr class="text-center">
+                  <th>2<sup>ème</sup> manche</th>
+                  <td>8 juin 2024</td>
+                  <td>8 Heures de Spa</td>
+                  <td>Spa - Belgique</td>
+                </tr>
+                <tr class="text-center">
+                  <th>3<sup>ème</sup> manche</th>
+                  <td>21 juillet 2024</td>
+                  <td>8 Heures de Suzuka</td>
+                  <td>Suzuka - Japon</td>
+                </tr>
+                <tr class="text-center">
+                  <th>4<sup>ème</sup> manche</th>
+                  <td>14-15 septembre 2024</td>
+                  <td>Bol d'Or</td>
+                  <td>Le Castellet - France</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div class="form-group row my-3">
-            <label for="message" class="col-sm-3 my-2">votre message : </label>
-            <div class="col-sm-9">
-              <textarea
-                class="form-control py-2"
-                id="message"
-                rows="3"
-              ></textarea>
-            </div>
-          </div>
-          <div class="d-flex justify-content-center mt-auto">
-            <button type="submit" class="btn btn-primary my-3">Submit</button>
-          </div>
-        </form>
+        </div>
       </div>
     </main>
-
-    <!-- footer -->
+    <!-- footer fichier footer = footer.scss (size icon) + bootstrap -->
     <footer class="container-fluid text-center bg-primary mt-2">
       <ul class="row m-4">
         <li class="col m-2">
