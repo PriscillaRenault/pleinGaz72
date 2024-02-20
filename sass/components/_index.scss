@@ -1,90 +1,90 @@
 @use '../utils/_main' as utils;
 
 body {
-  background-color: utils.$neutral-250;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
+    background-color: utils.$neutral-250;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
 }
 h1,
 p {
-  color: utils.$neutral-0;
-  text-align: center;
-  font-family: utils.$text;
+    color: utils.$neutral-0;
+    text-align: center;
+    font-family: utils.$text;
 }
 h1 {
-  font-size: 2rem;
-  font-family: utils.$title;
+    font-size: 2rem;
+    @include utils.fontTitle;
 }
 
 .main {
-  background-color: utils.$neutral-900;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-
-  &__teamPhoto {
-    @include utils.img;
-    width: 80%;
-  }
-  &__teamPresentation {
-    display: flex;
-    flex-direction: row;
-    padding: 2rem;
-  }
-  &__motoPhoto {
-    display: none;
-  }
-}
-@media screen and (min-width: 650px) {
-  .main {
-    @include utils.flux(1300px);
+    background-color: utils.$neutral-900;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5rem 0;
+    padding: 1rem;
 
     &__teamPhoto {
-      width: 70%;
-      border-radius: 5px;
-      margin: 10px;
-      display: flex;
+        @include utils.img;
+        width: 80%;
     }
     &__teamPresentation {
-      display: flex;
-      flex-direction: row;
-
-      h1 {
-        font-size: 2rem;
-        color: utils.$neutral-0;
-        padding: 0 2rem;
-      }
-      p {
-        color: utils.$neutral-0;
-        padding: 1rem 2rem;
-        margin: 1rem;
-      }
-    }
-    &__divMotoPhoto {
-      display: flex;
-      align-items: center;
+        display: flex;
+        flex-direction: row;
+        padding: 2rem;
     }
     &__motoPhoto {
-      @include utils.img;
-      display: block;
-      width: auto;
-      height: 10rem;
+        display: none;
     }
-  }
+}
+@media screen and (min-width: 650px) {
+    .main {
+        @include utils.flux(1300px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5rem 0;
+
+        &__teamPhoto {
+            width: 70%;
+            border-radius: 5px;
+            margin: 10px;
+            display: flex;
+        }
+        &__teamPresentation {
+            display: flex;
+            flex-direction: row;
+
+            h1 {
+                font-size: 2rem;
+                color: utils.$neutral-0;
+                padding: 0 2rem;
+            }
+            p {
+                color: utils.$neutral-0;
+                padding: 1rem 2rem;
+                margin: 1rem;
+            }
+        }
+        &__divMotoPhoto {
+            display: flex;
+            align-items: center;
+        }
+        &__motoPhoto {
+            @include utils.img;
+            display: block;
+            width: auto;
+            height: 10rem;
+        }
+    }
 }
 @media screen and (min-width: 850px) {
-  .main .main__motoPhoto {
-    height: 20rem;
-  }
+    .main .main__motoPhoto {
+        height: 20rem;
+    }
 }
 @media screen and (min-width: 1800px) {
-  body {
-    @include utils.flux(1700px);
-  }
+    body {
+        @include utils.flux(1700px);
+    }
 }

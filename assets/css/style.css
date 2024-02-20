@@ -32,7 +32,9 @@ header {
 .nav li,
 .nav a {
   color: #e5fe04;
-  font-family: "Graduate", serif;
+  font-family: "Permanent Marker", serif;
+  font-weight: 400;
+  font-style: normal;
   transition: 0.7s ease;
 }
 .nav li a,
@@ -98,7 +100,9 @@ p {
 
 h1 {
   font-size: 2rem;
-  font-family: "Graduate", serif;
+  font-family: "Permanent Marker", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .main {
