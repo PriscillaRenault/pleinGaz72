@@ -197,60 +197,51 @@ sup {
   cursor: pointer;
 }
 
-.card {
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  width: 300px;
+  margin: 2rem;
+  height: auto;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  /* This container is needed to position the front and back side */
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  /* Position the front and back side */
+  /* Style the front side (fallback if image is missing) */
+  /* Style the back side */
+}
+.flip-card-inner {
   width: 100%;
   height: 100%;
-  max-width: 300px;
-  perspective: 900px;
-  margin: 10px auto;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  color: black;
+}
+.flip-card-back {
+  color: #fff;
+  transform: rotateY(180deg);
 }
 
-.flipCard {
-  height: 100%;
-  transition: all 1s ease-in-out;
-  transform-style: preserve-3d;
-  height: 500px;
-}
-.flipCard--img {
+.pilot--img {
   border-radius: 5px;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.6);
   border: 2px solid #e5fe04;
-  display: block;
-  width: 300px;
-  height: 250px;
-  object-fit: cover;
+  width: 15rem;
+  height: 20rem;
 }
-.flipCard--btnTurnBack, .flipCard--btnTurnFront {
-  position: absolute;
-  bottom: 8px;
-  right: 8px;
-  visibility: hidden;
-  border-radius: 10px;
-  border: #e5fe04;
-  color: #202020;
-}
-.flipCard--btnTurnBack {
-  background: #fff;
-}
-.flipCard--btnTurnFront {
-  background: #e5fe04;
-}
-.flipCard--front, .flipCard--back {
-  height: 100%;
-  position: absolute;
-  backface-visibility: hidden;
-  z-index: 2;
-  border-radius: 10px;
-  border: 5px, solid, #e5fe04;
-  color: #fff;
-}
-.flipCard--title {
-  font-family: "Permanent Marker", serif;
-  font-weight: 400;
-  font-style: normal;
+.pilot--name {
   color: #e5fe04;
-}
-
-.do-flip {
-  transform: rotateY(-180deg);
+  margin-top: 0.5rem;
 }
