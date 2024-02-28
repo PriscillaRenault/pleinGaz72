@@ -27,8 +27,10 @@
             src="https://kit.fontawesome.com/f30ebbf9c0.js"
             crossorigin="anonymous"
         ></script>
+        <script src="../JS/script.js" defer></script>
+        <script src="../JS/card.js" defer></script>
     </head>
-    <body class="flux">
+    <body class="flux pilots">
         <!-- Header : fichier scss = header.scss -->
         <header>
             <nav class="nav">
@@ -62,25 +64,26 @@
                 ></i>
             </nav>
         </header>
-
-        <main class="container bg-dark">
+        <main class="container">
             <div class="row">
-                <div
-                    class="col d-flex flex-sm-column flex-lg-row align-items-center"
-                >
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front pilot">
-                                <img
-                                    class="pilot--img"
-                                    src="../assets/image/pilotes/Vincent_Bridel.jpg"
-                                    alt="Photo de Vincent Bridel"
-                                />
-                                <h1 class="pilot--name">Vincent BRIDEL</h1>
-                            </div>
-                            <div class="flip-card-back">
-                                <h1 class="pilot--name">Vincent BRIDEL</h1>
-                                <h2>Palmarès</h2>
+                <div class="card js-card col-md-3">
+                    <div class="flipCard js-flipCard">
+                        <div class="flipCard--front">
+                            <img
+                                class="flipCard--img"
+                                alt="Vincent Bridel"
+                                src="../assets/image/pilotes/Vincent_Bridel.jpg"
+                            />
+                            <h1 class="flipCard--title text-center">
+                                Vincent Bridel
+                            </h1>
+                            <button class="flipCard--btnTurnBack">
+                                Palmares
+                            </button>
+                        </div>
+                        <div class="flipCard--back">
+                            <div class="flipCard--title">Vincent Bridel</div>
+                            <div class="flipCard--palmares">
                                 <ul>
                                     <li>
                                         2018 - 12H de Magny-Cours <br />
@@ -102,191 +105,15 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front pilot">
-                                <img
-                                    class="pilot--img"
-                                    src="../assets/image/pilotes/Nicolas_Therouin.jpg"
-                                    alt="Photo de Nicolas Therouin"
-                                />
-                                <h1 class="pilot--name">Nicolas THEROUIN</h1>
-                            </div>
-                            <div class="flip-card-back">
-                                <h1 class="pilot--name">Nicolas THEROUIN</h1>
-                                <h2>Palmarès</h2>
-                                <ul>
-                                    <li>
-                                        2006 - Championnat de France 125
-                                        endurance
-                                    </li>
-                                    <li>
-                                        2014 - Coupe Pirelli Supersport - 4<sup
-                                            >ème</sup
-                                        >
-                                    </li>
-                                    <li>
-                                        2016 - 24H du Mans Motos<br />
-                                        15<sup>ème</sup> Superstock 1000 28<sup
-                                            >ème</sup
-                                        >
-                                        au général
-                                    </li>
-                                    <li>
-                                        2016 - 24H de Barcelone<br />
-                                        3<sup>ème</sup> EWC 16<sup>ème</sup> au
-                                        général
-                                    </li>
-                                    <li>2018 - Bol D'Or</li>
-                                    <li>2019 - 23H60</li>
-                                    <li>
-                                        2021 - Ultimate Cup 600 4<sup>ème</sup>
-                                        au Mans
-                                    </li>
-                                    <li>
-                                        2022 - 24h de Barcelone <br />
-                                        8<sup>ème</sup> Superstock 1000 et
-                                        15<sup>ème</sup> au général
-                                    </li>
-                                    <li>
-                                        2022 - Chimay IRRC Supersport - 15<sup
-                                            >ème</sup
-                                        >
-                                    </li>
-                                    <li>
-                                        2023 - Vainqueur des 24H de la Réunion
-                                        BeOn moto3
-                                    </li>
-                                    <li>2023 - 23H60</li>
-                                    <li>
-                                        2023 - IRRC Supersport (Belgique,
-                                        République Tchèque, Allemagne)
-                                    </li>
-                                    <li>
-                                        2023 - Finale du trophée Roadsterà
-                                        Estoril
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front pilot">
-                                <img
-                                    class="pilot--img"
-                                    src="../assets/image/pilotes/Herve_Cheron.jpg"
-                                    alt="Herve Cheron"
-                                />
-                                <h1 class="pilot--name">Hervé CHERON</h1>
-                            </div>
-                            <div class="flip-card-back">
-                                <h1 class="pilot--name">Hervé CHERON</h1>
-                                <h2>Palmarès</h2>
-                                <ul>
-                                    <li>2006 et 2007 - FSBK open 125</li>
-                                    <li>
-                                        2009 / 2010 / 2011 - Coupe Ducati et
-                                        Course en CFE
-                                    </li>
-                                    <li>
-                                        de 2011 à 2020 - 23H60 25 power <br />
-                                        - 23h60 - 9 victoires et une
-                                        2<sup>ème</sup>place <br />
-                                        - O3Z - 6 Victoires 2<sup>ème</sup> au
-                                        championnat
-                                    </li>
-
-                                    <li>
-                                        2016 - 24H du Mans Motos - 15<sup
-                                            >ème</sup
-                                        >
-                                    </li>
-                                    <li>
-                                        2017 - 24H du Mans Motos - 18<sup
-                                            >ème</sup
-                                        >
-                                    </li>
-                                    <li>
-                                        2018 - 24H du Mans Motos et Bol d'Or
-                                    </li>
-                                    <li>2021 - 24H du Mans Motos</li>
-                                    <li>2022 - 24h de Barcelone</li>
-                                    <li>
-                                        2022 - Chimay IRRC Supersport - 15<sup
-                                            >ème</sup
-                                        >
-                                    </li>
-                                    <li>
-                                        2023 - Vainqueur des 24H de la Réunion
-                                        BeOn moto3
-                                    </li>
-                                    <li>2023 - 23H60</li>
-                                    <li>
-                                        2023 - IRRC Supersport (Belgique,
-                                        République Tchèque, Allemagne)
-                                    </li>
-                                    <li>
-                                        2023 - Finale du trophée Roadsterà
-                                        Estoril
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front pilot">
-                                <img
-                                    class="pilot--img"
-                                    src="../assets/image/pilotes/Mathieu_Bouvier.jpg"
-                                    alt="Photo de Mathieu Bouvier"
-                                />
-                                <h1 class="pilot--name">Mathieu BOUVIER</h1>
-                            </div>
-                            <div class="flip-card-back">
-                                <h1 class="pilot--name">Mathieu BOUVIER</h1>
-                                <h2>Palmarès</h2>
-                                <ul>
-                                    <li>
-                                        2015 - Course de côte - Cat supermotard
-                                    </li>
-                                    <li>
-                                        2016 - Plusieurs podiums <br />
-                                        Championnat de course de côte - Cat
-                                        supermotard
-                                    </li>
-                                    <li>
-                                        2016 - Championnat Bretagne de course de
-                                        côte - Cat open et 600ccgue
-                                    </li>
-                                    <li>2017 / 2018 - Ultimate Cup - 600cc</li>
-                                    <li>2018 2 podiums en Ultimate Cup 600</li>
-                                    <li>
-                                        2019 Superracer Loheac - 5<sup>ème</sup>
-                                    </li>
-                                    <li>
-                                        2021 Podium de ka VIP Race Noire 1000cc
-                                    </li>
-                                    <li>2021 23H60</li>
-                                    <li>
-                                        2022 Plusieurs podiums en championnat de
-                                        ligue 25 power cat 15cvH de R
-                                    </li>
-                                    <li>
-                                        2022 - Victoire cat électrique 24h de
-                                        Rouen
-                                    </li>
-                                    <li>2022 - 24h de Barcelone</li>
-                                </ul>
-                            </div>
+                            <button class="flipCard--btnTurnFront">
+                                Retour
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
+
         <!-- footer -->
         <footer class="container-fluid text-center bg-primary mt-2">
             <ul class="row m-4">
@@ -319,6 +146,5 @@
             src="https://kit.fontawesome.com/f30ebbf9c0.js"
             crossorigin="anonymous"
         ></script>
-        <script src="../JS/script.js"></script>
     </body>
 </html>
