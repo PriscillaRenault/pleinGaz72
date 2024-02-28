@@ -1,5 +1,8 @@
 @use '../utils/_main' as utils;
 
+.palmares {
+    width: 20rem;
+}
 .mainPilots {
     display: flex;
     flex-direction: row;

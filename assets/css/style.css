@@ -13,7 +13,7 @@ ul {
 }
 
 body {
-  background-color: #bebebe;
+  background-color: #f3f3f3;
 }
 
 .grid {
@@ -46,7 +46,7 @@ h1 {
 .main__teamPhoto {
   border-radius: 5px;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.6);
-  border: 2px solid #e5fe04;
+  border: 2px solid #fefe04;
   width: 70%;
 }
 .main__teamPresentation {
@@ -96,7 +96,7 @@ h1 {
   .main__motoPhoto {
     border-radius: 5px;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.6);
-    border: 2px solid #e5fe04;
+    border: 2px solid #fefe04;
     display: block;
     width: auto;
     height: 10rem;
@@ -134,7 +134,7 @@ header {
 }
 .nav li,
 .nav a {
-  color: #e5fe04;
+  color: #fefe04;
   font-family: "Permanent Marker", serif;
   font-weight: 400;
   font-style: normal;
@@ -155,7 +155,7 @@ header {
 
 .icons--bars,
 .icons--xmark {
-  color: #e5fe04;
+  color: #fefe04;
   margin: 25px;
   cursor: pointer;
 }
@@ -163,7 +163,7 @@ header {
 @media screen and (min-width: 650px) {
   .nav {
     justify-content: space-between;
-    background: linear-gradient(130deg, #202020 24%, #bebebe 24% 25%, #e5fe04 25% 100%);
+    background: linear-gradient(130deg, #202020 24%, #f3f3f3 24% 25%, #fefe04 25% 100%);
     align-items: center;
     font-size: calc(0.5rem + 1vw);
   }
@@ -198,6 +198,10 @@ sup {
 .networks__logo {
   width: 3rem;
   cursor: pointer;
+}
+
+.palmares {
+  width: 20rem;
 }
 
 .mainPilots {
@@ -251,11 +255,11 @@ sup {
 .pilot--img {
   border-radius: 5px;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.6);
-  border: 2px solid #e5fe04;
+  border: 2px solid #fefe04;
   width: 15rem;
   height: 20rem;
 }
 .pilot--name {
-  color: #e5fe04;
+  color: #fefe04;
   margin-top: 0.5rem;
 }
