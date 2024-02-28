@@ -1,5 +1,16 @@
 @use '../utils/_main' as utils;
 
+.mainPilots {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 70rem;
+    width: 90%;
+    margin: auto;
+    max-height: min-content;
+}
+
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
     width: 300px;

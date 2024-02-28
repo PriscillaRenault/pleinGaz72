@@ -2,10 +2,14 @@
 
 body {
     background-color: utils.$neutral-250;
+}
+
+.grid {
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
 }
+
 h1,
 p {
     color: utils.$neutral-0;
@@ -22,11 +26,11 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    padding: 0.5rem;
 
     &__teamPhoto {
         @include utils.img;
-        width: 80%;
+        width: 70%;
     }
     &__teamPresentation {
         display: flex;
@@ -43,7 +47,7 @@ h1 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 5rem 0;
+        padding: 1.5rem 0;
 
         &__teamPhoto {
             width: 70%;
