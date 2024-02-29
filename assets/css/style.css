@@ -204,15 +204,50 @@ sup {
   display: none;
 }
 
+.show {
+  rotate: 180deg;
+}
+
+.flipCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pilot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .pilot__img {
   border-radius: 5px;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.6);
   border: 2px solid #fefe04;
   width: 15rem;
   height: 20rem;
-  margin: auto;
+  margin-top: 2rem;
 }
 .pilot__name {
   color: #fefe04;
   margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 700px) {
+  .pilots {
+    max-width: 1300px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  .flipCard {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .mainPilots {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
 }
