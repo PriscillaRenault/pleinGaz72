@@ -27,6 +27,8 @@
             src="https://kit.fontawesome.com/f30ebbf9c0.js"
             crossorigin="anonymous"
         ></script>
+
+        <script src="../JS/script.js" defer></script>
     </head>
     <body class="flux">
         <!-- Header : fichier scss = header.scss -->
@@ -68,84 +70,76 @@
         </header>
 
         <main class="bg-dark mainPilots">
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front pilot">
-                        <img
-                            class="pilot--img"
-                            src="../assets/image/pilotes/Vincent_Bridel.jpg"
-                            alt="Photo de Vincent Bridel"
-                        />
-                        <h1 class="pilot--name">Vincent BRIDEL</h1>
-                    </div>
-                    <div class="flip-card-back">
-                        <img
-                            class="palmares"
-                            src="../assets/image/pilotes/Palmares/P_Vincent.jpg"
-                            alt="Palmares de Vincent Bridel"
-                        />
-                    </div>
+            <div class="flipCard">
+                <div class="flipCard__front pilot">
+                    <img
+                        class="pilot__img"
+                        src="../assets/image/pilotes/Vincent_Bridel.jpg"
+                        alt="Photo de Vincent Bridel"
+                    />
+                    <h1 class="pilot__name">Vincent BRIDEL</h1>
+                </div>
+                <div class="flipCard-back hidden">
+                    <img
+                        class="pilot__palmares"
+                        src="../assets/image/pilotes/Palmares/P_Vincent.jpg"
+                        alt="Palmares de Vincent Bridel"
+                    />
                 </div>
             </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front pilot">
-                        <img
-                            class="pilot--img"
-                            src="../assets/image/pilotes/Nicolas_Therouin.jpg"
-                            alt="Photo de Nicolas Therouin"
-                        />
-                        <h1 class="pilot--name">Nicolas THEROUIN</h1>
-                    </div>
-                    <div class="flip-card-back">
-                        <img
-                            class="palmares"
-                            src="../assets/image/pilotes/Palmares/P_Nicolas.jpg"
-                            alt="Palmares de Nicolas THEROUIN"
-                        />
-                    </div>
+            <div class="flipCard">
+                <div class="flipCard__front pilot">
+                    <img
+                        class="pilot__img"
+                        src="../assets/image/pilotes/Nicolas_Therouin.jpg"
+                        alt="Photo de Nicolas Therouin"
+                    />
+                    <h1 class="pilot__name">Nicolas THEROUIN</h1>
+                </div>
+                <div class="flipCard-back hidden">
+                    <img
+                        class="pilot__palmares"
+                        src="../assets/image/pilotes/Palmares/P_Nicolas.jpg"
+                        alt="Palmares de Nicolas THEROUIN"
+                    />
                 </div>
             </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front pilot">
-                        <img
-                            class="pilot--img"
-                            src="../assets/image/pilotes/Herve_Cheron.jpg"
-                            alt="Herve Cheron"
-                        />
-                        <h1 class="pilot--name">Hervé CHERON</h1>
-                    </div>
-                    <div class="flip-card-back">
-                        <img
-                            class="palmares"
-                            src="../assets/image/pilotes/Palmares/P_Hervé.jpg"
-                            alt="Palmares de Hervé CHERON"
-                        />
-                    </div>
+            <div class="flipCard">
+                <div class="flipCard__front pilot">
+                    <img
+                        class="pilot__img"
+                        src="../assets/image/pilotes/Herve_Cheron.jpg"
+                        alt="Herve Cheron"
+                    />
+                    <h1 class="pilot__name">Hervé CHERON</h1>
+                </div>
+                <div class="flipCard-back hidden">
+                    <img
+                        class="pilot__palmares"
+                        src="../assets/image/pilotes/Palmares/P_Hervé.jpg"
+                        alt="Palmares de Hervé CHERON"
+                    />
                 </div>
             </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front pilot">
-                        <img
-                            class="pilot--img"
-                            src="../assets/image/pilotes/Mathieu_Bouvier.jpg"
-                            alt="Photo de Mathieu Bouvier"
-                        />
-                        <h1 class="pilot--name">Mathieu BOUVIER</h1>
-                    </div>
-                    <div class="flip-card-back">
-                        <img
-                            class="palmares"
-                            src="../assets/image/pilotes/Palmares/P_Mathieu.jpg"
-                            alt="Palmares de Mathieu BOUVIER"
-                        />
-                    </div>
+            <div class="flipCard">
+                <div class="flipCard__front pilot">
+                    <img
+                        class="pilot__img"
+                        src="../assets/image/pilotes/Mathieu_Bouvier.jpg"
+                        alt="Photo de Mathieu Bouvier"
+                    />
+                    <h1 class="pilot__name">Mathieu BOUVIER</h1>
+                </div>
+                <div class="flipCard-back hidden">
+                    <img
+                        class="pilot__palmares"
+                        src="../assets/image/pilotes/Palmares/P_Mathieu.jpg"
+                        alt="Palmares de Mathieu BOUVIER"
+                    />
                 </div>
             </div>
         </main>
-        <!-- footer -->
+        <!-- footer fichier footer = footer.scss + bootstrap -->
         <footer class="container-fluid text-center bg-primary mt-2">
             <ul class="row m-4">
                 <li class="col m-2">
@@ -163,20 +157,15 @@
                     <a
                         class=""
                         target="_blank"
-                        href="https://www.leetchi.com/fr/c/team-plein-gaz-72--24h-moto-2024-le-mans-8671462?utm_source=native&utm_medium=social_sharing"
+                        href="https://www.instagram.com/plein_gaz_72/"
                     >
                         <img
-                            src="../assets/image/Logo-Leetchi-mini.png"
-                            alt="leetchi"
+                            src="../assets/image/icons8-instagram-50.png"
+                            alt="Instagram"
                             class="networks__logo"
                     /></a>
                 </li>
             </ul>
         </footer>
-        <script
-            src="https://kit.fontawesome.com/f30ebbf9c0.js"
-            crossorigin="anonymous"
-        ></script>
-        <script src="../JS/script.js"></script>
     </body>
 </html>
