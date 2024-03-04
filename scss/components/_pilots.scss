@@ -13,12 +13,21 @@
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    &__front,
+    &__back {
+        transition: transform 0.5s;
+    }
     &__front {
         display: flex;
         flex-direction: column;
         align-items: center;
-        &--img,
-        &--palmares {
+        &:hover {
+            transform: rotateY(180deg);
+        }
+        &--img {
             @include utils.img;
             width: 15rem;
             height: 20rem;
@@ -28,10 +37,13 @@
             color: utils.$primary;
             margin-top: 0.5rem;
         }
+    }
+    &__back {
         &--palmares {
             @include utils.img;
             width: 20rem;
             height: auto;
+            margin-top: 4rem;
         }
     }
 }

@@ -215,13 +215,22 @@ sup {
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+.flipCard__front, .flipCard__back {
+  transition: transform 0.5s;
 }
 .flipCard__front {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.flipCard__front--img, .flipCard__front--palmares {
+.flipCard__front:hover {
+  transform: rotateY(180deg);
+}
+.flipCard__front--img {
   border-radius: 5px;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.6);
   border: 2px solid #fefe04;
@@ -233,12 +242,13 @@ sup {
   color: #fefe04;
   margin-top: 0.5rem;
 }
-.flipCard__front--palmares {
+.flipCard__back--palmares {
   border-radius: 5px;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.6);
   border: 2px solid #fefe04;
   width: 20rem;
   height: auto;
+  margin-top: 4rem;
 }
 
 @media screen and (min-width: 700px) {

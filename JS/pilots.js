@@ -5,9 +5,12 @@ let backCard = document.querySelectorAll('.js-back')
 function changeCard(actionEnter, actionExit) {
     for (let i = 0; i < card.length; i++) {
         card[i].addEventListener(actionEnter, () => {
-            frontCard[i].classList.remove('flipCard__front')
-            frontCard[i].classList.add('hidden')
-            backCard[i].classList.remove('hidden')
+            setTimeout(() => {
+                frontCard[i].classList.remove('flipCard__front')
+                frontCard[i].classList.add('hidden')
+                backCard[i].classList.remove('hidden')
+            }, 500)
+
             backCard[i].addEventListener('click', () => {
                 if (backCard[i].classList.contains('zoomed')) {
                     backCard[i].classList.remove('zoomed')
@@ -17,10 +20,12 @@ function changeCard(actionEnter, actionExit) {
             })
         })
         card[i].addEventListener(actionExit, () => {
-            backCard[i].classList.add('hidden')
-            backCard[i].classList.remove('zoomed')
-            frontCard[i].classList.add('flipCard__front')
-            frontCard[i].classList.remove('hidden')
+            setTimeout(() => {
+                backCard[i].classList.add('hidden')
+                backCard[i].classList.remove('zoomed')
+                frontCard[i].classList.add('flipCard__front')
+                frontCard[i].classList.remove('hidden')
+            }, 500)
         })
     }
 }
