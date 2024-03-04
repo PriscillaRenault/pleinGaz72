@@ -1,0 +1,74 @@
+@use '../utils/_main' as utils;
+.hidden {
+    display: none;
+}
+.zoomed {
+    transform: scale(2);
+    display: flex;
+    justify-content: flex-start;
+}
+
+.flipCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    &__front,
+    &__back {
+        transition: transform 0.5s;
+    }
+    &__front {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &:hover {
+            transform: rotateY(180deg);
+        }
+        &--img {
+            @include utils.img;
+            width: 15rem;
+            height: 20rem;
+            margin-top: 2rem;
+        }
+        &--name {
+            color: utils.$primary;
+            margin-top: 0.5rem;
+        }
+    }
+    &__back {
+        &--palmares {
+            @include utils.img;
+            width: 20rem;
+            height: auto;
+            margin-top: 4rem;
+        }
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .allPilots {
+        max-width: 1300px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    .flipCard {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .main {
+        display: flex;
+        align-items: center;
+    }
+    .allPilots {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+}

@@ -13,7 +13,7 @@ ul {
 }
 
 body {
-  background-color: #bebebe;
+  background-color: #f3f3f3;
 }
 
 .grid {
@@ -46,7 +46,7 @@ h1 {
 .main__teamPhoto {
   border-radius: 5px;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.6);
-  border: 2px solid #e5fe04;
+  border: 2px solid #fefe04;
   width: 70%;
 }
 .main__teamPresentation {
@@ -96,7 +96,7 @@ h1 {
   .main__motoPhoto {
     border-radius: 5px;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.6);
-    border: 2px solid #e5fe04;
+    border: 2px solid #fefe04;
     display: block;
     width: auto;
     height: 10rem;
@@ -134,7 +134,7 @@ header {
 }
 .nav li,
 .nav a {
-  color: #e5fe04;
+  color: #fefe04;
   font-family: "Permanent Marker", serif;
   font-weight: 400;
   font-style: normal;
@@ -147,6 +147,7 @@ header {
 }
 .nav li a:hover {
   color: #f3f3f3;
+  -webkit-text-stroke: 2px #202020;
   text-decoration: underline;
 }
 .nav .inactive {
@@ -155,7 +156,7 @@ header {
 
 .icons--bars,
 .icons--xmark {
-  color: #e5fe04;
+  color: #fefe04;
   margin: 25px;
   cursor: pointer;
 }
@@ -163,7 +164,7 @@ header {
 @media screen and (min-width: 650px) {
   .nav {
     justify-content: space-between;
-    background: linear-gradient(130deg, #202020 24%, #bebebe 24% 25%, #e5fe04 25% 100%);
+    background: linear-gradient(130deg, #202020 24%, #f3f3f3 24% 25%, #fefe04 25% 100%);
     align-items: center;
     font-size: calc(0.5rem + 1vw);
   }
@@ -200,62 +201,77 @@ sup {
   cursor: pointer;
 }
 
-.mainPilots {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  height: 70rem;
-  width: 90%;
-  margin: auto;
-  max-height: min-content;
+.hidden {
+  display: none;
 }
 
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-card {
-  width: 300px;
-  margin: 2rem;
-  height: auto;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  /* This container is needed to position the front and back side */
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  /* Position the front and back side */
-  /* Style the front side (fallback if image is missing) */
-  /* Style the back side */
+.zoomed {
+  transform: scale(2);
+  display: flex;
+  justify-content: flex-start;
 }
-.flip-card-inner {
-  width: 100%;
-  height: 100%;
-  text-align: center;
+
+.flipCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  perspective: 1000px;
 }
-.flip-card:hover .flip-card-inner {
+.flipCard__front, .flipCard__back {
+  transition: transform 0.5s;
+}
+.flipCard__front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flipCard__front:hover {
   transform: rotateY(180deg);
 }
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-}
-.flip-card-front {
-  color: black;
-}
-.flip-card-back {
-  color: #f3f3f3;
-  transform: rotateY(180deg);
-}
-
-.pilot--img {
+.flipCard__front--img {
   border-radius: 5px;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.6);
-  border: 2px solid #e5fe04;
+  border: 2px solid #fefe04;
   width: 15rem;
   height: 20rem;
+  margin-top: 2rem;
 }
-.pilot--name {
-  color: #e5fe04;
+.flipCard__front--name {
+  color: #fefe04;
   margin-top: 0.5rem;
+}
+.flipCard__back--palmares {
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.6);
+  border: 2px solid #fefe04;
+  width: 20rem;
+  height: auto;
+  margin-top: 4rem;
+}
+
+@media screen and (min-width: 700px) {
+  .allPilots {
+    max-width: 1300px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  .flipCard {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .main {
+    display: flex;
+    align-items: center;
+  }
+  .allPilots {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
 }

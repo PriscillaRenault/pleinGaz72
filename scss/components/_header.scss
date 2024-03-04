@@ -29,6 +29,7 @@ header {
     }
     li a:hover {
         color: utils.$neutral-0;
+        -webkit-text-stroke: 2px utils.$neutral-900;
         text-decoration: underline;
     }
     .inactive {
@@ -49,7 +50,7 @@ header {
         background: linear-gradient(
             130deg,
             utils.$neutral-900 24%,
-            utils.$neutral-250 24% 25%,
+            utils.$neutral-0 24% 25%,
             utils.$primary 25% 100%
         );
         align-items: center;

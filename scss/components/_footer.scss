@@ -1,0 +1,7 @@
+//BS change colors in customs.scss
+
+@use '../utils/_main' as utils;
+.networks__logo {
+    width: 3rem;
+    cursor: pointer;
+}
