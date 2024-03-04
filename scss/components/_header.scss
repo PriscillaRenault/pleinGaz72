@@ -29,6 +29,7 @@ header {
     }
     li a:hover {
         color: utils.$neutral-0;
+        -webkit-text-stroke: 2px utils.$neutral-900;
         text-decoration: underline;
     }
     .inactive {
