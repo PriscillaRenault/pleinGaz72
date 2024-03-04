@@ -209,6 +209,7 @@ sup {
   transform: scale(2);
   display: flex;
   justify-content: flex-start;
+  order: 999;
 }
 
 .flipCard {
