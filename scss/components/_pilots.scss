@@ -3,34 +3,34 @@
     display: none;
 }
 
-.show {
-    rotate: 180deg;
-}
-
 .flipCard {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.pilot {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    &__img {
-        @include utils.img;
-        width: 15rem;
-        height: 20rem;
-        margin-top: 2rem;
-    }
-    &__name {
-        color: utils.$primary;
-        margin-top: 0.5rem;
+    &__front {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &--img {
+            @include utils.img;
+            width: 15rem;
+            height: 20rem;
+            margin-top: 2rem;
+        }
+        &--name {
+            color: utils.$primary;
+            margin-top: 0.5rem;
+        }
+        &--palmares {
+            @include utils.img;
+            width: 20rem;
+            height: auto;
+        }
     }
 }
 
 @media screen and (min-width: 700px) {
-    .pilots {
+    .allPilots {
         max-width: 1300px;
         display: flex;
         flex-flow: row wrap;
@@ -43,7 +43,7 @@
 }
 
 @media screen and (min-width: 1000px) {
-    .mainPilots {
+    .allPilots {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-around;
