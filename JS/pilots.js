@@ -1,6 +1,7 @@
 let card = document.querySelectorAll('.flipCard')
 let frontCard = document.querySelectorAll('.js-front')
 let backCard = document.querySelectorAll('.js-back')
+let imgBackCard = document.querySelectorAll('.js-palmares')
 
 function changeCard(actionEnter, actionExit) {
     for (let i = 0; i < card.length; i++) {
@@ -16,6 +17,7 @@ function changeCard(actionEnter, actionExit) {
                     backCard[i].classList.remove('zoomed')
                 } else {
                     backCard[i].classList.add('zoomed')
+                    console.log(backCard[i])
                 }
             })
         })
