@@ -1,21 +1,23 @@
 let card = document.querySelectorAll('.flipCard')
 let frontCard = document.querySelectorAll('.js-front')
 let backCard = document.querySelectorAll('.js-back')
+let imgBackCard = document.querySelectorAll('.js-palmares')
+let imgFrontCard = document.querySelectorAll('.js-profil')
 
 function changeCard(actionEnter, actionExit) {
-    for (let i = 0; i < card.length; i++) {
-        card[i].addEventListener(actionEnter, () => {
+    for (let i = 0; i < imgFrontCard.length; i++) {
+        imgFrontCard[i].addEventListener(actionEnter, () => {
             setTimeout(() => {
                 frontCard[i].classList.remove('flipCard__front')
                 frontCard[i].classList.add('hidden')
                 backCard[i].classList.remove('hidden')
             }, 500)
 
-            backCard[i].addEventListener('click', () => {
-                if (backCard[i].classList.contains('zoomed')) {
-                    backCard[i].classList.remove('zoomed')
+            imgBackCard[i].addEventListener('click', () => {
+                if (imgBackCard[i].classList.contains('zoomed')) {
+                    imgBackCard[i].classList.remove('zoomed')
                 } else {
-                    backCard[i].classList.add('zoomed')
+                    imgBackCard[i].classList.add('zoomed')
                 }
             })
         })

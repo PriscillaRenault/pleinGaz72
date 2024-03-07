@@ -206,10 +206,9 @@ sup {
 }
 
 .zoomed {
+  position: absolute;
   transform: scale(2);
-  display: flex;
-  justify-content: flex-start;
-  order: 999;
+  z-index: 1;
 }
 
 .flipCard {
