@@ -16,8 +16,10 @@ function changeCard(actionEnter, actionExit) {
             imgBackCard[i].addEventListener('click', () => {
                 if (imgBackCard[i].classList.contains('zoomed')) {
                     imgBackCard[i].classList.remove('zoomed')
+                    card[i].style.width = 'auto'
                 } else {
                     imgBackCard[i].classList.add('zoomed')
+                    card[i].style.width = '1000px'
                 }
             })
         })
