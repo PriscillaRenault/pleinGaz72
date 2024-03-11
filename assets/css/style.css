@@ -211,27 +211,24 @@ sup {
   z-index: 1;
 }
 
-.flipCard {
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #202020;
+  border: 0rem;
   cursor: pointer;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-  perspective: 1000px;
 }
-.flipCard__front, .flipCard__back {
-  transition: transform 0.5s;
-}
-.flipCard__front {
+.card__front {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #202020;
 }
-.flipCard__front:hover {
-  transform: rotateY(180deg);
+.card__front:hover {
+  scale: 1.1;
 }
-.flipCard__front--img {
+.card__front--img {
   border-radius: 5px;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.6);
   border: 2px solid #fefe04;
@@ -239,17 +236,15 @@ sup {
   height: 20rem;
   margin-top: 2rem;
 }
-.flipCard__front--name {
+.card__front--name {
   color: #fefe04;
   margin-top: 0.5rem;
 }
-.flipCard__back--palmares {
+.card__modal--palmares {
   border-radius: 5px;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.6);
   border: 2px solid #fefe04;
-  width: 20rem;
-  height: auto;
-  margin-top: 4rem;
+  width: 30rem;
 }
 
 @media screen and (min-width: 700px) {
@@ -259,9 +254,12 @@ sup {
     flex-flow: row wrap;
     justify-content: space-around;
   }
-  .flipCard {
+  .card {
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+  .card__modal--palmares {
+    width: 40rem;
   }
 }
 @media screen and (min-width: 1000px) {

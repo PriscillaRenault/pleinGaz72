@@ -8,24 +8,20 @@
     z-index: 1;
 }
 
-.flipCard {
+.card {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: utils.$neutral-900;
+    border: 0rem;
     cursor: pointer;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-    perspective: 1000px;
-    &__front,
-    &__back {
-        transition: transform 0.5s;
-    }
     &__front {
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-color: utils.$neutral-900;
         &:hover {
-            transform: rotateY(180deg);
+            scale: 1.1;
         }
         &--img {
             @include utils.img;
@@ -38,12 +34,10 @@
             margin-top: 0.5rem;
         }
     }
-    &__back {
+    &__modal {
         &--palmares {
             @include utils.img;
-            width: 20rem;
-            height: auto;
-            margin-top: 4rem;
+            width: 30rem;
         }
     }
 }
@@ -55,9 +49,14 @@
         flex-flow: row wrap;
         justify-content: space-around;
     }
-    .flipCard {
+    .card {
         margin-left: 1rem;
         margin-right: 1rem;
+        &__modal {
+            &--palmares {
+                width: 40rem;
+            }
+        }
     }
 }
 

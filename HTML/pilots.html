@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Plein Gaz 72</title>
+        <title>Document</title>
         <link rel="icon" type="image/x-icon" href="../assets/image/logo.jpeg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,7 +27,8 @@
             src="https://kit.fontawesome.com/f30ebbf9c0.js"
             crossorigin="anonymous"
         ></script>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="../JS/burger.js" defer></script>
         <script src="../JS/pilots.js" defer></script>
     </head>
@@ -72,72 +73,252 @@
 
         <main class="main flux bg-dark">
             <article class="allPilots">
-                <section class="flipCard">
-                    <div class="flipCard__front js-front">
-                        <img
-                            class="flipCard__front--img js-profil"
-                            src="../assets/image/pilotes/Vincent_Bridel.jpg"
-                            alt="Photo de Vincent Bridel"
-                        />
-                        <h1 class="flipCard__front--name">Vincent BRIDEL</h1>
+                <section class="card">
+                    <div class="card__front">
+                        <!-- click on image to show modal -->
+                        <button
+                            type="button"
+                            class="btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#palmaresVincent"
+                        >
+                            <img
+                                class="card__front--img"
+                                src="../assets/image/pilotes/Vincent_Bridel.jpg"
+                                alt="Photo de Vincent Bridel"
+                            />
+                        </button>
+                        <h1 class="card__front--name">Vincent BRIDEL</h1>
                     </div>
-                    <div class="flipCard__back hidden js-back">
-                        <img
-                            class="flipCard__back--palmares js-palmares"
-                            src="../assets/image/pilotes/Palmares/P_Vincent.jpg"
-                            alt="Palmares de Vincent Bridel"
-                        />
+                    <div
+                        class="modal fade"
+                        id="palmaresVincent"
+                        tabindex="-1"
+                        aria-labelledby="palmaresVincentLabel"
+                        aria-hidden="true"
+                    >
+                        <div
+                            class="modal-dialog modal-lg modal-dialog-centered"
+                        >
+                            <div class="modal-content bg-dark">
+                                <div class="modal-header">
+                                    <h1
+                                        class="modal-title fs-5"
+                                        id="palmaresVincentLabel"
+                                    >
+                                        Vincent Bridel
+                                    </h1>
+                                    <button
+                                        type="button"
+                                        class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"
+                                    ></button>
+                                </div>
+                                <div class="modal-body mx-auto">
+                                    <img
+                                        class="card__modal--palmares"
+                                        src="../assets/image/pilotes/Palmares/P_Vincent.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="modal-footer">
+                                    <button
+                                        type="button"
+                                        class="btn btn-secondary"
+                                        data-bs-dismiss="modal"
+                                    >
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
-                <section class="flipCard">
-                    <div class="flipCard__front js-front">
-                        <img
-                            class="flipCard__front--img js-profil"
-                            src="../assets/image/pilotes/Nicolas_Therouin.jpg"
-                            alt="Photo de Nicolas Therouin"
-                        />
-                        <h1 class="flipCard__front--name">Nicolas THEROUIN</h1>
+                <section class="card">
+                    <div class="card__front">
+                        <!-- click on image to show modal -->
+                        <button
+                            type="button"
+                            class="btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#palmaresNicolas"
+                        >
+                            <img
+                                class="card__front--img"
+                                src="../assets/image/pilotes/Nicolas_Therouin.jpg"
+                                alt="Photo de Nicolas THEROUIN"
+                            />
+                        </button>
+                        <h1 class="card__front--name">Nicolas THEROUIN</h1>
                     </div>
-                    <div class="flipCard__back hidden js-back">
-                        <img
-                            class="flipCard__back--palmares js-palmares"
-                            src="../assets/image/pilotes/Palmares/P_Nicolas.jpg"
-                            alt="Palmares de Nicolas THEROUIN"
-                        />
+                    <div
+                        class="modal fade"
+                        id="palmaresNicolas"
+                        tabindex="-1"
+                        aria-labelledby="palmaresNicolasLabel"
+                        aria-hidden="true"
+                    >
+                        <div
+                            class="modal-dialog modal-lg modal-dialog-centered"
+                        >
+                            <div class="modal-content bg-dark">
+                                <div class="modal-header">
+                                    <h1
+                                        class="modal-title fs-5"
+                                        id="palmaresNicolasLabel"
+                                    >
+                                        Nicolas THEROUIN
+                                    </h1>
+                                    <button
+                                        type="button"
+                                        class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"
+                                    ></button>
+                                </div>
+                                <div class="modal-body mx-auto">
+                                    <img
+                                        class="card__modal--palmares"
+                                        src="../assets/image/pilotes/Palmares/P_Nicolas.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="modal-footer">
+                                    <button
+                                        type="button"
+                                        class="btn btn-secondary"
+                                        data-bs-dismiss="modal"
+                                    >
+                                        Fermer
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
-                <section class="flipCard">
-                    <div class="flipCard__front js-front">
-                        <img
-                            class="flipCard__front--img js-profil"
-                            src="../assets/image/pilotes/Herve_Cheron.jpg"
-                            alt="Herve Cheron"
-                        />
-                        <h1 class="flipCard__front--name">Hervé CHERON</h1>
+                <section class="card">
+                    <div class="card__front">
+                        <!-- click on image to show modal -->
+                        <button
+                            type="button"
+                            class="btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#palmaresHerve"
+                        >
+                            <img
+                                class="card__front--img"
+                                src="../assets/image/pilotes/Herve_Cheron.jpg"
+                                alt="Photo de Herve CHERON"
+                            />
+                        </button>
+                        <h1 class="card__front--name">Herve CHERON</h1>
                     </div>
-                    <div class="flipCard__back hidden js-back">
-                        <img
-                            class="flipCard__back--palmares js-palmares"
-                            src="../assets/image/pilotes/Palmares/P_Hervé.jpg"
-                            alt="Palmares de Hervé CHERON"
-                        />
+                    <div
+                        class="modal fade"
+                        id="palmaresHerve"
+                        tabindex="-1"
+                        aria-labelledby="palmaresHerveLabel"
+                        aria-hidden="true"
+                    >
+                        <div
+                            class="modal-dialog modal-lg modal-dialog-centered"
+                        >
+                            <div class="modal-content bg-dark">
+                                <div class="modal-header">
+                                    <h1
+                                        class="modal-title fs-5"
+                                        id="palmaresHerveLabel"
+                                    >
+                                        Herve CHERON
+                                    </h1>
+                                    <button
+                                        type="button"
+                                        class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"
+                                    ></button>
+                                </div>
+                                <div class="modal-body mx-auto">
+                                    <img
+                                        class="card__modal--palmares"
+                                        src="../assets/image/pilotes/Palmares/P_Hervé.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="modal-footer">
+                                    <button
+                                        type="button"
+                                        class="btn btn-secondary"
+                                        data-bs-dismiss="modal"
+                                    >
+                                        Fermer
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
-                <section class="flipCard">
-                    <div class="flipCard__front js-front">
-                        <img
-                            class="flipCard__front--img js-profil"
-                            src="../assets/image/pilotes/Mathieu_Bouvier.jpg"
-                            alt="Photo de Mathieu Bouvier"
-                        />
-                        <h1 class="flipCard__front--name">Mathieu BOUVIER</h1>
+                <section class="card">
+                    <div class="card__front">
+                        <!-- click on image to show modal -->
+                        <button
+                            type="button"
+                            class="btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#palmaresMathieu"
+                        >
+                            <img
+                                class="card__front--img"
+                                src="../assets/image/pilotes/Mathieu_Bouvier.jpg"
+                                alt="Photo de Mathieu BOUVIER"
+                            />
+                        </button>
+                        <h1 class="card__front--name">Mathieu BOUVIER</h1>
                     </div>
-                    <div class="flipCard__back hidden js-back">
-                        <img
-                            class="flipCard__back--palmares js-palmares"
-                            src="../assets/image/pilotes/Palmares/P_Mathieu.jpg"
-                            alt="Palmares de Mathieu BOUVIER"
-                        />
+                    <div
+                        class="modal fade"
+                        id="palmaresMathieu"
+                        tabindex="-1"
+                        aria-labelledby="palmaresMathieuLabel"
+                        aria-hidden="true"
+                    >
+                        <div
+                            class="modal-dialog modal-lg modal-dialog-centered"
+                        >
+                            <div class="modal-content bg-dark">
+                                <div class="modal-header">
+                                    <h1
+                                        class="modal-title fs-5"
+                                        id="palmaresMathieuLabel"
+                                    >
+                                        Mathieu BOUVIER
+                                    </h1>
+                                    <button
+                                        type="button"
+                                        class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"
+                                    ></button>
+                                </div>
+                                <div class="modal-body mx-auto">
+                                    <img
+                                        class="card__modal--palmares"
+                                        src="../assets/image/pilotes/Palmares/P_Mathieu.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="modal-footer">
+                                    <button
+                                        type="button"
+                                        class="btn btn-secondary"
+                                        data-bs-dismiss="modal"
+                                    >
+                                        Fermer
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </article>
