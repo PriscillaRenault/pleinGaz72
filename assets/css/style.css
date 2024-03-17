@@ -23,6 +23,7 @@ body {
 }
 
 h1,
+h2,
 p {
   color: #f3f3f3;
   text-align: center;
@@ -31,6 +32,13 @@ p {
 
 h1 {
   font-size: 2rem;
+  font-family: "Permanent Marker", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 1.5rem;
   font-family: "Permanent Marker", serif;
   font-weight: 400;
   font-style: normal;
@@ -56,6 +64,20 @@ h1 {
 }
 .main__motoPhoto {
   display: none;
+}
+
+.sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.sponsors__img {
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.6);
+  border: 2px solid #fefe04;
+  width: 7rem;
+  height: auto;
+  margin: 1rem;
 }
 
 @media screen and (min-width: 650px) {
