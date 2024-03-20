@@ -70,6 +70,8 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
 }
 .sponsors__img {
   border-radius: 5px;

@@ -51,6 +51,8 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
     &__img {
         @include utils.img;
         width: 7rem;
