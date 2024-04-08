@@ -22,7 +22,7 @@
 
 <body class="flux grid">
     <!-- Header : fichier scss = header.scss -->
-    <?php require_once __DIR__ . '/PHP/component/header.php'; ?>
+    <?php require_once __DIR__ . '/component/header.php'; ?>
 
 
     <main class="container contact bg-dark">
@@ -98,7 +98,7 @@
         </div>
     </main>
     <!-- footer fichier footer = footer.scss + bootstrap -->
-    <?php require_once __DIR__ . '/PHP/component/header.php'; ?>
+    <?php require_once __DIR__ . '/component/header.php'; ?>
 
 </body>
 

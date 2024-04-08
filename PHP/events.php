@@ -22,7 +22,7 @@
 
 <body class="flux grid">
     <!-- Header : fichier scss = header.scss -->
-    <?php require_once __DIR__ . '/PHP/component/header.php'; ?>
+    <?php require_once __DIR__ . '/component/header.php'; ?>
 
     <main class="container bg-dark">
         <h1 class="p-3 my-5">Calendrier Endurance EWC 2024</h1>
@@ -58,7 +58,7 @@
         </div>
     </main>
     <!-- footer fichier footer = footer.scss (size icon) + bootstrap -->
-    <?php require_once __DIR__ . '/PHP/component/header.php'; ?>
+    <?php require_once __DIR__ . '/component/header.php'; ?>
 
 </body>
 
