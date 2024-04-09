@@ -98,7 +98,7 @@
         </div>
     </main>
     <!-- footer fichier footer = footer.scss + bootstrap -->
-    <?php require_once __DIR__ . '/component/header.php'; ?>
+    <?php require_once __DIR__ . '/component/footer.php'; ?>
 
 </body>
 

@@ -26,7 +26,7 @@
 
 	<!-- main  fichier scss = home.scss-->
 	<main class="main">
-		<img class="main__teamPhoto" src="assets/image/couverture.JPG" alt="Tout le team" />
+		<img class="main__teamPhoto" src="./assets/image/couverture.JPG" alt="Tout le team" />
 		<div>
 			<div class="main__teamPresentation">
 				<div>
@@ -90,16 +90,63 @@
 			<h2>Nos partenaires</h2>
 			<div class="sponsors">
 				<a href="https://a-stix.com/fr/" target="_blank" rel="noopener noreferrer">
-					<img class="sponsors__img" src="./assets/image/sponsors/A-StiX.png" alt="A-StiX" /></a>
+					<img class="sponsors__img" src="./assets/image/sponsors/A-StiX.png" alt="A-StiX" />
+				</a>
 				<a href="https://www.facebook.com/profile.php?id=100089742756711&paipv=0&eav=AfYlg4cZ72YTL1BfQrZ8h2L3QylqLhBgkum0P5L9l2Rsekv1OotgOsmjVirXDP5vRT0" target="_blank" rel="noopener noreferrer">
-					<img class="sponsors__img" src="./assets/image/sponsors/A_Tout_Alu.png" alt="A-StiX" /></a>
-				<a href="https://www.facebook.com/profile.php?id=100083085531512" target="_blank" rel="noopener noreferrer"><img class="sponsors__img" src="./assets/image/sponsors/A2J.png" alt="A2J" /></a><a href="https://www.pagesjaunes.fr/pros/60300051" target="_blank" rel="noopener noreferrer"><img class="sponsors__img" src="./assets/image/sponsors/Bouvier PCC.png" alt="Bouvier PCC" /></a><a href="https://www.pagesjaunes.fr/pros/58442924" target="_blank" rel="noopener noreferrer"><img class="sponsors__img" src="./assets/image/sponsors/BSH Conseil-01.png" alt="BSH Conseil" /></a><a href="https://www.facebook.com/p/Carrosserie-du-lac-100057285856426/" target="_blank" rel="noopener noreferrer"><img class="sponsors__img" src="./assets/image/sponsors/Carrosserie du Lac.png" alt="Carrosserie du Lac" /></a><a href="https://www.cgisol.fr/" target="_blank" rel="noopener noreferrer"><img class="sponsors__img" src="./assets/image/sponsors/CG ISOL.png" alt=" CG Isol" /></a><a href="https://www.facebook.com/ecl.lambert" target="_blank" rel="noopener noreferrer"><img class="sponsors__img" src="./assets/image/sponsors/ECL.png" alt="ECL" /></a><a href="https://www.improved-cm.com/" target="_blank" rel="noopener noreferrer"><img class="sponsors__img" src="./assets/image/sponsors/Improved CM.png" alt="Improved CM" /></a><a href="https://www.groupe-landeau.fr/" target="_blank" rel="noopener noreferrer"><img class="sponsors__img" src="./assets/image/sponsors/LANDEAU.png" alt="Landeau" /></a><a href="https://www.facebook.com/romainlejeunelto/?locale=fr_FR" target="_blank" rel="noopener noreferrer"><img class="sponsors__img" src="./assets/image/sponsors/LES TOITURES OIZEENNES.png" alt="Les Toitures Oizéennes" /></a><a href="https://www.facebook.com/Mecalex72/" target="_blank" rel="noopener noreferrer"><img class="sponsors__img" src="./assets/image/sponsors/MECALEX.png" alt="Mecalex" /></a><a href="https://mobclubmontgesnois.fr.gd/Page-d-h-accueil.htm" target="_blank" rel="noopener noreferrer"><img class="sponsors__img" src="./assets/image/sponsors/Mob Club.png" alt="Mob Club Montgesnois" /></a><a href="https://montdidier-tp-motoculture.eproshopping.fr/?fbclid=IwAR372nSQI_FP76B6NVJDSzv6nmHeSolkH1QeIYxwge4fTx0iDYKFPzrss1U" target="_blank" rel="noopener noreferrer"><img class="sponsors__img" src="./assets/image/sponsors/MONTDIDIER.png" alt="Montdidier TP Motoculture" /></a><a href="https://www.ouestenergie.fr/" target="_blank" rel="noopener noreferrer"><img class="sponsors__img" src="./assets/image/sponsors/OUEST ENERGIE.png" alt="Ouest Energie" /></a>
-				<a href="https://www.persojets.com/" target="_blank" rel="noopener noreferrer"><img class="sponsors__img" src="./assets/image/sponsors/PERSO JETS.png" alt="Perso Jets" /></a>
-				<img class="sponsors__img" src="./assets/image/sponsors/developpeusePriscillaRenault.png" alt="Priscilla RENAULT" />
+					<img class="sponsors__img" src="./assets/image/sponsors/A_Tout_Alu.png" alt="A tout Alu" />
+				</a>
+				<a href="https://www.facebook.com/profile.php?id=100083085531512" target="_blank" rel="noopener noreferrer">
+					<img class="sponsors__img" src="./assets/image/sponsors/A2J.png" alt="A2J" />
+				</a>
+				<a href="https://www.pagesjaunes.fr/pros/60300051" target="_blank" rel="noopener noreferrer">
+					<img class="sponsors__img" src="./assets/image/sponsors/Bouvier PCC.png" alt="Bouvier PCC" />
+				</a>
+				<a href="https://www.pagesjaunes.fr/pros/58442924" target="_blank" rel="noopener noreferrer">
+					<img class="sponsors__img" src="./assets/image/sponsors/BSH Conseil-01.png" alt="BSH Conseil" />
+				</a>
+				<a href="https://www.facebook.com/p/Carrosserie-du-lac-100057285856426/" target="_blank" rel="noopener noreferrer">
+					<img class="sponsors__img" src="./assets/image/sponsors/Carrosserie du Lac.png" alt="Carrosserie du Lac" />
+				</a>
+				<a href="https://www.cgisol.fr/" target="_blank" rel="noopener noreferrer">
+					<img class="sponsors__img" src="./assets/image/sponsors/CG ISOL.png" alt=" CG Isol" />
+				</a>
+				<a href="https://www.facebook.com/ecl.lambert" target="_blank" rel="noopener noreferrer">
+					<img class="sponsors__img" src="./assets/image/sponsors/ECL.png" alt="ECL" />
+				</a>
+				<a href="https://www.improved-cm.com/" target="_blank" rel="noopener noreferrer">
+					<img class="sponsors__img" src="./assets/image/sponsors/Improved CM.png" alt="Improved CM" />
+				</a>
+				<a href="https://www.groupe-landeau.fr/" target="_blank" rel="noopener noreferrer">
+					<img class="sponsors__img" src="./assets/image/sponsors/LANDEAU.png" alt="Landeau" />
+				</a>
+				<a href="https://www.facebook.com/romainlejeunelto/?locale=fr_FR" target="_blank" rel="noopener noreferrer">
+					<img class="sponsors__img" src="./assets/image/sponsors/LES TOITURES OIZEENNES.png" alt="Les Toitures Oizéennes" />
+				</a>
+				<a href="https://www.facebook.com/Mecalex72/" target="_blank" rel="noopener noreferrer">
+					<img class="sponsors__img" src="./assets/image/sponsors/MECALEX.png" alt="Mecalex" />
+				</a>
+				<a href="https://mobclubmontgesnois.fr.gd/Page-d-h-accueil.htm" target="_blank" rel="noopener noreferrer">
+					<img class="sponsors__img" src="./assets/image/sponsors/Mob Club.png" alt="Mob Club Montgesnois" />
+				</a>
+				<a href="https://montdidier-tp-motoculture.eproshopping.fr/?fbclid=IwAR372nSQI_FP76B6NVJDSzv6nmHeSolkH1QeIYxwge4fTx0iDYKFPzrss1U" target="_blank" rel="noopener noreferrer">
+					<img class="sponsors__img" src="./assets/image/sponsors/MONTDIDIER.png" alt="Montdidier TP Motoculture" />
+				</a>
+				<a href="https://www.ouestenergie.fr/" target="_blank" rel="noopener noreferrer">
+					<img class="sponsors__img" src="./assets/image/sponsors/OUEST ENERGIE.png" alt="Ouest Energie" />
+				</a>
+				<a href="https://www.persojets.com/" target="_blank" rel="noopener noreferrer">
+					<img class="sponsors__img" src="./assets/image/sponsors/PERSO JETS.png" alt="Perso Jets" />
+				</a>
+				<img class="sponsors__img" src="./assets/image/sponsors/developpeusePriscillaRenault.png" alt="Priscilla RENAULT Développeuse web" />
 				<a href="https://centre-controle-technique.securitest.fr/pays-de-la-loire/sarthe/ste-jamme-sur-sarthe/3-allee-des-sablons" target="_blank" rel="noopener noreferrer">
-					<img class="sponsors__img" src="./assets/image/sponsors/SECURITEST.png" alt="Securitest" /></a>
-				<a href="https://www.facebook.com/p/SN-AUTOS-100063503294209/" target="_blank" rel="noopener noreferrer"><img class="sponsors__img" src="./assets/image/sponsors/SN AUTO.png" alt="SN Auto" /></a>
-				<a href="https://www.magasins-u.com/magasin/superu-mareilenchampagne?fbclid=IwAR08ibfUsgxG4KlQgVWV1cdEqPKSFEU5bq-AOkuBzqJ62LQI7icNogzXODs" target="_blank" rel="noopener noreferrer"><img class="sponsors__img" src="./assets/image/sponsors/Super U - Mareil - Vector.png" alt="Super U Mareil en champagne" /></a>
+					<img class="sponsors__img" src="./assets/image/sponsors/SECURITEST.png" alt="Securitest" />
+				</a>
+				<a href="https://www.facebook.com/p/SN-AUTOS-100063503294209/" target="_blank" rel="noopener noreferrer">
+					<img class="sponsors__img" src="./assets/image/sponsors/SN AUTO.png" alt="SN Auto" />
+				</a>
+				<a href="https://www.magasins-u.com/magasin/superu-mareilenchampagne?fbclid=IwAR08ibfUsgxG4KlQgVWV1cdEqPKSFEU5bq-AOkuBzqJ62LQI7icNogzXODs" target="_blank" rel="noopener noreferrer">
+					<img class="sponsors__img" src="./assets/image/sponsors/Super U - Mareil - Vector.png" alt="Super U Mareil en champagne" />
+				</a>
 			</div>
 		</div>
 	</main>

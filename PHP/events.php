@@ -58,7 +58,7 @@
         </div>
     </main>
     <!-- footer fichier footer = footer.scss (size icon) + bootstrap -->
-    <?php require_once __DIR__ . '/component/header.php'; ?>
+    <?php require_once __DIR__ . '/component/footer.php'; ?>
 
 </body>
 
