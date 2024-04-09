@@ -4,7 +4,7 @@
         <?php if (basename($_SERVER['PHP_SELF']) == 'index.php') : ?>
             <img src="./assets/image/logo.jpeg" alt="logo Team Plein Gaz 72" class="nav__logo" />
         <?php else : ?>
-            <img src="../../assets/image/logo.jpeg" alt="logo Team Plein Gaz 72" class="nav__logo" />
+            <img src="../assets/image/logo.jpeg" alt="logo Team Plein Gaz 72" class="nav__logo" />
         <?php endif; ?>
         <!-- Menu -->
         <ul class="nav__menuList inactive" id="js-menuList">
