@@ -50,51 +50,34 @@
 
         <p class="my-4">
             Pour toute demande, n'hésitez pas à nous contacter
-            <!-- via le formulaire ci dessous ou -->
+            via le formulaire ci dessous ou
             par mail
-            <a href="mailto:pleingaz72@gmail.com"> Plein Gaz 72</a>
+            <a href="mailto:pleingaz72@gmail.com"> Team Plein Gaz 72</a>
         </p>
         <div class="container">
-            <!-- <form
-                    method="post"
-                    class="col-12 col-md-6 mx-auto p-3 mb-4 bg-light border border-primary rounded"
-                >
-                    <div class="form-group row my-3 d-flex align-items-center">
-                        <label
-                            for="email"
-                            class="text-center col-sm-2 col-form-label"
-                            >Email :
-                        </label>
-                        <div class="col-sm-9">
-                            <input
-                                type="email"
-                                id="email"
-                                placeholder="email@example.com"
-                            />
-                        </div>
-                        <small class="form-text text-secondary"
-                            >Juste pour que l'on puisse vous répondre... Nous ne
-                            diffuserons jamais votre email à un tiers.</small
-                        >
+            <form action="submit_contact.php" method="post" class="col col-md-6 mx-auto bg-light border border-primary rounded">
+                <div class="form-group row my-3 d-flex ">
+                    <label for="email" class="text-center col-sm-2 col-form-label">Email :
+                    </label>
+                    <div class="col-sm-9">
+                        <input type="email" id="email" name="email" class="form-control" placeholder="email@example.com" />
                     </div>
-                    <div class="form-group row my-3">
-                        <label for="message" class="col-sm-3 my-2"
-                            >votre message :
-                        </label>
-                        <div class="col-sm-9">
-                            <textarea
-                                class="form-control py-2"
-                                id="message"
-                                rows="3"
-                            ></textarea>
-                        </div>
+                    <small class="form-text text-secondary mx-3 col-sm-9">Juste pour que l'on puisse vous répondre...<br> Nous ne
+                        diffuserons jamais votre email à un tiers.</small>
+                </div>
+                <div class="form-group row my-3 d-flex">
+                    <label for="message" class="col-sm-2 m-2 text-center">Votre message :
+                    </label>
+                    <div class="col-sm-9">
+                        <textarea class="form-control py-2 m-2" id="message" name="message" rows="4"></textarea>
                     </div>
-                    <div class="d-flex justify-content-center mt-auto">
-                        <button type="submit" class="btn btn-primary my-3">
-                            Submit
-                        </button>
-                    </div>
-                </form> -->
+                </div>
+                <div class="d-flex justify-content-center mx-auto">
+                    <button type="submit" class="btn btn-primary my-3">
+                        Envoyer
+                    </button>
+                </div>
+            </form>
         </div>
     </main>
     <!-- footer fichier footer = footer.scss + bootstrap -->
