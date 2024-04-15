@@ -110,6 +110,10 @@
 				<a href="https://www.cgisol.fr/" target="_blank" rel="noopener noreferrer">
 					<img class="sponsors__img" src="./assets/image/sponsors/cgisol.png" alt=" CG Isol" />
 				</a>
+				</a>
+				<a href="https://www.facebook.com/profile.php?id=100090050766216" target="_blank" rel="noopener noreferrer">
+					<img class="sponsors__img" src="./assets/image/sponsors/delion-matteo.jpg" alt="Delion Matteo" />
+				</a>
 				<a href="https://www.facebook.com/ecl.lambert" target="_blank" rel="noopener noreferrer">
 					<img class="sponsors__img" src="./assets/image/sponsors/ecl.png" alt="ECL" />
 				</a>
@@ -124,6 +128,9 @@
 				</a>
 				<a href="https://www.facebook.com/Mecalex72/" target="_blank" rel="noopener noreferrer">
 					<img class="sponsors__img" src="./assets/image/sponsors/mecalex.png" alt="Mecalex" />
+				</a>
+				<a href="https://www.mecavea.com/" target="_blank" rel="noopener noreferrer">
+					<img class="sponsors__img" src="./assets/image/sponsors/mecavea.png" alt="Mecavea" />
 				</a>
 				<a href="https://mobclubmontgesnois.fr.gd/Page-d-h-accueil.htm" target="_blank" rel="noopener noreferrer">
 					<img class="sponsors__img" src="./assets/image/sponsors/mob-club.png" alt="Mob Club Montgesnois" />
