@@ -13,7 +13,11 @@ if (
     echo ('Il faut un email et un message valides pour soumettre le formulaire.');
     return;
 }
+
+$retour = mail('pleingaz72@gmail.com', 'Envoi depuis la page Contact', $postData['message'], $postData['email']);
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -41,11 +45,11 @@ if (
     <main class="container">
 
         <?php require_once(__DIR__ . '/component/header.php'); ?>
-        <h1>Message bien reçu !</h1>
+        <h1 class="text-dark">Message bien reçu !</h1>
 
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title">Rappel de vos informations</h5>
+                <h5 class="card-title text-light">Rappel de vos informations</h5>
                 <p class="card-text"><b>Email</b> : <?php echo ($postData['email']); ?></p>
                 <p class="card-text"><b>Message</b> : <?php echo (strip_tags($postData['message'])); ?></p>
             </div>
