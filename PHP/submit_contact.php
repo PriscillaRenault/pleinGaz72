@@ -25,6 +25,8 @@ $retour = mail('pleingaz72@gmail.com', 'Envoi depuis la page Contact', $postData
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="Vous voulez soutenir notre projet vous pouvez nous contacter par mail" />
     <title>Plein Gaz 72</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />

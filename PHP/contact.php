@@ -4,7 +4,22 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Plein Gaz 72</title>
+    <meta name="robots" content="index, follow">
+    <title>Contacter l'association sarthoise Team Plein Gaz 72</title>
+    <meta name="description" content="Vous voulez soutenir notre projet dans les courses d'endurance motos, contactez-nous !">
+    <!-- Google analytics (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4BFC7QM9CD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-4BFC7QM9CD');
+    </script>
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

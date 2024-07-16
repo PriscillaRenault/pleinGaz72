@@ -4,7 +4,21 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="robots" content="index, follow">
+    <title>Les Pilotes de l'association</title>
+    <meta name="description" content="Les pilotes du team sarthois Plein Gaz 72" />
+    <!-- Google analytics (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4BFC7QM9CD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-4BFC7QM9CD');
+    </script>
     <link rel="icon" type="image/x-icon" href="../assets/image/logo.jpeg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,6 +36,7 @@
 </head>
 
 <body class="flux grid">
+
     <!-- Header : fichier scss = header.scss -->
     <?php require_once __DIR__ . '/component/header.php'; ?>
 
