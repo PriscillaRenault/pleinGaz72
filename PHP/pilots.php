@@ -19,9 +19,9 @@
 
         gtag('config', 'G-4BFC7QM9CD');
     </script>
-    <link rel="icon" type="image/x-icon" href="../assets/image/logo.jpeg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/vnd-icon" href="../assets/image/logo.ico" />
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link rel="stylesheet" href="../assets/css/custom.css" />
@@ -49,7 +49,7 @@
                     <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#palmaresVincent">
                         <img class="card__front--img" src="../assets/image/pilotes/Vincent_Bridel.jpg" alt="Photo de Vincent Bridel" />
                     </button>
-                    <h1 class="card__front--name">Vincent BRIDEL</h1>
+                    <h2 class="card__front--name">Vincent BRIDEL</h2>
                 </div>
                 <div class="modal fade" id="palmaresVincent" tabindex="-1" aria-labelledby="palmaresVincentLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -78,7 +78,7 @@
                     <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#palmaresNicolas">
                         <img class="card__front--img" src="../assets/image/pilotes/Nicolas_Therouin.jpg" alt="Photo de Nicolas THEROUIN" />
                     </button>
-                    <h1 class="card__front--name">Nicolas THEROUIN</h1>
+                    <h2 class="card__front--name">Nicolas THEROUIN</h2>
                 </div>
                 <div class="modal fade" id="palmaresNicolas" tabindex="-1" aria-labelledby="palmaresNicolasLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -107,7 +107,7 @@
                     <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#palmaresHerve">
                         <img class="card__front--img" src="../assets/image/pilotes/Herve_Cheron.jpg" alt="Photo de Herve CHERON" />
                     </button>
-                    <h1 class="card__front--name">Herve CHERON</h1>
+                    <h2 class="card__front--name">Herve CHERON</h2>
                 </div>
                 <div class="modal fade" id="palmaresHerve" tabindex="-1" aria-labelledby="palmaresHerveLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -136,7 +136,7 @@
                     <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#palmaresMathieu">
                         <img class="card__front--img" src="../assets/image/pilotes/Mathieu_Bouvier.jpg" alt="Photo de Mathieu BOUVIER" />
                     </button>
-                    <h1 class="card__front--name">Mathieu BOUVIER</h1>
+                    <h2 class="card__front--name">Mathieu BOUVIER</h2>
                 </div>
                 <div class="modal fade" id="palmaresMathieu" tabindex="-1" aria-labelledby="palmaresMathieuLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg modal-dialog-centered">

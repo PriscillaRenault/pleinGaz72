@@ -24,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet" />
-    <link rel="icon" type="image/x-icon" href="../assets/image/logo.jpeg" />
+    <link rel="icon" type="image/vnd-icon" href="../assets/image/logo.ico" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link rel="stylesheet" href="../assets/css/custom.css" />
     <link rel="stylesheet" href="../assets/css/style.css" />
@@ -77,7 +77,7 @@
                     <div class="col-sm-9">
                         <input type="email" id="email" name="email" class="form-control" placeholder="email@example.com" />
                     </div>
-                    <small class="form-text text-secondary mx-3 col-sm-9">Juste pour que l'on puisse vous répondre...<br> Nous ne
+                    <small class="form-text text-dark mx-3 col-sm-9">Juste pour que l'on puisse vous répondre...<br> Nous ne
                         diffuserons jamais votre email à un tiers.</small>
                 </div>
                 <div class="form-group row my-3 d-flex">
@@ -88,7 +88,7 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center mx-auto">
-                    <button type="submit" class="btn btn-primary my-3">
+                    <button type="submit" class="btn btn-primary my-3 border-dark">
                         Envoyer
                     </button>
                 </div>
