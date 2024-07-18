@@ -49,15 +49,15 @@
                     <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#palmaresVincent">
                         <img class="card__front--img" src="../assets/image/pilotes/Vincent_Bridel.jpg" alt="Photo de Vincent Bridel" />
                     </button>
-                    <h2 class="card__front--name">Vincent BRIDEL</h2>
+                    <span class="card__front--name">Vincent BRIDEL</span>
                 </div>
                 <div class="modal fade" id="palmaresVincent" tabindex="-1" aria-labelledby="palmaresVincentLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg modal-dialog-centered">
                         <div class="modal-content bg-dark">
                             <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="palmaresVincentLabel">
+                                <span class="modal-title fs-5" id="palmaresVincentLabel">
                                     Vincent Bridel
-                                </h1>
+                                </span>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body mx-auto">
@@ -78,15 +78,15 @@
                     <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#palmaresNicolas">
                         <img class="card__front--img" src="../assets/image/pilotes/Nicolas_Therouin.jpg" alt="Photo de Nicolas THEROUIN" />
                     </button>
-                    <h2 class="card__front--name">Nicolas THEROUIN</h2>
+                    <span class="card__front--name">Nicolas THEROUIN</span>
                 </div>
                 <div class="modal fade" id="palmaresNicolas" tabindex="-1" aria-labelledby="palmaresNicolasLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg modal-dialog-centered">
                         <div class="modal-content bg-dark">
                             <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="palmaresNicolasLabel">
+                                <span class="modal-title fs-5" id="palmaresNicolasLabel">
                                     Nicolas THEROUIN
-                                </h1>
+                                </span>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body mx-auto">
@@ -107,15 +107,15 @@
                     <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#palmaresHerve">
                         <img class="card__front--img" src="../assets/image/pilotes/Herve_Cheron.jpg" alt="Photo de Herve CHERON" />
                     </button>
-                    <h2 class="card__front--name">Herve CHERON</h2>
+                    <span class="card__front--name">Herve CHERON</span>
                 </div>
                 <div class="modal fade" id="palmaresHerve" tabindex="-1" aria-labelledby="palmaresHerveLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg modal-dialog-centered">
                         <div class="modal-content bg-dark">
                             <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="palmaresHerveLabel">
+                                <span class="modal-title fs-5" id="palmaresHerveLabel">
                                     Herve CHERON
-                                </h1>
+                                </span>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body mx-auto">
@@ -136,15 +136,15 @@
                     <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#palmaresMathieu">
                         <img class="card__front--img" src="../assets/image/pilotes/Mathieu_Bouvier.jpg" alt="Photo de Mathieu BOUVIER" />
                     </button>
-                    <h2 class="card__front--name">Mathieu BOUVIER</h2>
+                    <span class="card__front--name">Mathieu BOUVIER</span>
                 </div>
                 <div class="modal fade" id="palmaresMathieu" tabindex="-1" aria-labelledby="palmaresMathieuLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg modal-dialog-centered">
                         <div class="modal-content bg-dark">
                             <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="palmaresMathieuLabel">
+                                <span class="modal-title fs-5" id="palmaresMathieuLabel">
                                     Mathieu BOUVIER
-                                </h1>
+                                </span>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body mx-auto">
