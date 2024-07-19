@@ -36,8 +36,8 @@
 
         </ul>
         <!-- icone burger menu -->
-        <i class="fa-solid fa-bars icons--bars fa-xl" id="js-Open"></i>
+        <i class="fa-solid fa-bars fa-xl icons--bars " id="js-Open"></i>
 
-        <i class="fa-solid fa-xmark icons--xmark fa-xl inactive" id="js-Close"></i>
+        <i class="fa-solid fa-xmark fa-xl icons--xmark  inactive" id="js-Close"></i>
     </nav>
 </header>

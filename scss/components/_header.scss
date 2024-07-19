@@ -1,79 +1,90 @@
-@use '../utils/_main' as utils;
+@use "../utils/_main" as utils;
 
 header {
-    background-color: utils.$neutral-900;
-    margin-bottom: 0.5rem;
+	background-color: utils.$neutral-900;
+	margin-bottom: 0.5rem;
 }
 .nav {
-    display: flex;
-    justify-content: space-between;
-    background: utils.$neutral-900;
-    height: 5rem;
+	display: flex;
+	justify-content: space-between;
+	background: utils.$neutral-900;
+	height: 6rem;
 
-    &__logo {
-        width: auto;
-        margin: auto;
-        height: 4rem;
-        border-radius: 10px;
-    }
-    li,
-    a {
-        color: utils.$primary;
-        @include utils.fontTitle;
-        transition: 0.7s ease;
-    }
-    li a,
-    a:visited {
-        text-decoration: none;
-        text-transform: uppercase;
-    }
-    li a:hover {
-        color: utils.$neutral-0;
-        -webkit-text-stroke: 2px utils.$neutral-900;
-        text-decoration: underline;
-    }
-    .inactive {
-        display: none;
-    }
+	&__logo {
+		width: auto;
+		margin: auto;
+		height: 4rem;
+		border-radius: 10px;
+	}
+
+	ul {
+		margin: 1rem 0;
+	}
+
+	li,
+	a {
+		color: utils.$primary;
+		@include utils.fontTitle;
+		transition: 0.7s ease;
+	}
+	li a,
+	a:visited {
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+	li a:hover {
+		color: utils.$neutral-0;
+		text-decoration: underline;
+	}
+	.inactive {
+		display: none;
+	}
 }
 
 .icons--bars,
 .icons--xmark {
-    color: utils.$primary;
-    margin: 25px;
-    cursor: pointer;
+	width: 1em;
+	color: utils.$primary;
+	cursor: pointer;
+	margin: auto 1rem;
 }
 
 @media screen and (min-width: 650px) {
-    .nav {
-        justify-content: space-between;
-        background: linear-gradient(
-            130deg,
-            utils.$neutral-900 24%,
-            utils.$neutral-0 24% 25%,
-            utils.$primary 25% 100%
-        );
-        align-items: center;
-        font-size: calc(0.5rem + 1vw);
-        &__logo {
-            margin: 0.5rem 1rem;
-            width: 6rem;
-        }
-        &__menuList {
-            display: flex;
-            justify-content: space-between;
-            color: utils.$neutral-900;
-            width: 70%;
-        }
-        li a,
-        a:visited {
-            color: utils.$neutral-900;
-        }
-    }
+	.nav {
+		justify-content: space-between;
+		background: linear-gradient(
+			130deg,
+			utils.$neutral-900 24%,
+			utils.$neutral-0 24% 25%,
+			utils.$primary 25% 100%
+		);
+		align-items: center;
+		font-size: calc(0.5rem + 1vw);
+		&__logo {
+			margin: 0.5rem 1rem;
+			width: 6rem;
+		}
+		&__menuList {
+			display: flex;
+			justify-content: space-between;
+			color: utils.$neutral-900;
+			width: 70%;
+		}
+		li a:hover {
+			color: utils.$neutral-0;
+			-webkit-text-stroke: 2px utils.$neutral-900;
+			text-decoration: underline;
+		}
+
+		li a,
+		a:visited {
+			color: utils.$neutral-900;
+		}
+	}
 }
 
 @media screen and (min-width: 850px) {
-    .nav {
-        justify-content: space-around;
-    }
+	.nav {
+		justify-content: space-around;
+	}
 }

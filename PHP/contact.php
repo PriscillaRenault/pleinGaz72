@@ -81,15 +81,15 @@
                         diffuserons jamais votre email à un tiers.</small>
                 </div>
                 <div class="form-group row my-3 d-flex">
-                    <label for="message" class="col-sm-2 m-2 text-center">Votre message :
+                    <label for="message" class="col-sm-2 m-2 text-center">Votre message:
                     </label>
                     <div class="col-sm-9">
-                        <textarea class="form-control py-2 m-2" id="message" name="message" rows="4"></textarea>
+                        <textarea class="form-control w-100" id="message" name="message" rows="4"></textarea>
                     </div>
                 </div>
                 <div class="d-flex justify-content-center mx-auto">
-                    <button type="submit" class="btn btn-primary my-3 border-dark">
-                        Envoyer
+                    <button type="submit" class="btn btn-primary my-3 font-weight-bold border-dark">
+                        <span class="font-weight-bold"> Envoyer</span>
                     </button>
                 </div>
             </form>
