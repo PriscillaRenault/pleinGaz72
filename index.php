@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="robots" content="index, follow">
 	<title>Accueil du site de l'association sarthoise Plein Gaz 72</title>
-	<meta name="description" content="Le team Plein Gaz 72 est née de la volonté d'un pilote Vincent Bridel d'accomplir ses rêves de compétitions motos. En 2011 avec des amis passionnés ils ont créés l'association.">
+	<meta name="description" content="Le team Plein Gaz 72 est né de la volonté d'un pilote Vincent Bridel d'accomplir ses rêves de compétitions motos. En 2011 avec des amis passionnés de courses d'endurance ils ont créés l'association en Sarthe à Joué l'Abbé.">
 	<!-- Google analytics (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-4BFC7QM9CD"></script>
 	<script>
@@ -40,7 +40,7 @@
 
 	<!-- main  fichier scss = home.scss-->
 	<main class="main">
-		<img class="main__teamPhoto" src="./assets/image/couverture.JPG" alt="Motorcycle Team Plein Gaz 72 riding on a circuit. Photo Fabrice Huet Photography" />
+		<img class="main__teamPhoto" src="./assets/image/couverture.JPG" alt="La moto de l'équipe de Sarthe Plein Gaz 72 roulant sur circuit. Photo Fabrice Huet Photography" />
 		<div>
 			<div class="main__teamPresentation">
 				<div>
@@ -96,7 +96,7 @@
 					</p>
 				</div>
 				<div class="main__divMotoPhoto">
-					<img src="assets/image/moto_officiel_paysage.JPG" alt="Official team bike on display" class="main__motoPhoto" />
+					<img src="assets/image/moto_officiel_paysage.JPG" alt="La Moto officielle du team" class="main__motoPhoto" />
 				</div>
 			</div>
 		</div>

@@ -42,13 +42,13 @@
 
 
     <main class="main flux bg-dark">
+        <h1>Les Pilotes du Team sarthois Plein Gaz 72</h1>
         <article class="allPilots">
-            <h1>Les Pilotes du Team Plein Gaz 72</h1>
             <section class="card">
                 <div class="card__front">
                     <!-- click on image to show modal -->
                     <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#palmaresVincent">
-                        <img class="card__front--img" src="../assets/image/pilotes/Vincent_Bridel.jpg" alt="Photo de Vincent Bridel" />
+                        <img class="card__front--img" src="../assets/image/pilotes/Vincent_Bridel.jpg" alt="Photo du Pilote et fondateur du team Plein Gaz 72 Vincent Bridel " />
                     </button>
                     <h2 class="card__front--name">Vincent BRIDEL</h2>
                 </div>
@@ -62,7 +62,7 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body mx-auto">
-                                <img class="card__modal--palmares" src="../assets/image/pilotes/Palmares/P_Vincent.jpg" alt="" />
+                                <img class="card__modal--palmares" src="../assets/image/pilotes/Palmares/P_Vincent.jpg" alt="Vincent Bridel En 2011 il crée Team Plein Gaz 72. Avec le team 2018 12h de Magny Cours, 2019 24h de Barcelone, 2021 Ultimate Cup Le Mans et Le Vigeant, 2022 24h de Barcelone" />
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
@@ -77,7 +77,7 @@
                 <div class="card__front">
                     <!-- click on image to show modal -->
                     <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#palmaresNicolas">
-                        <img class="card__front--img" src="../assets/image/pilotes/Nicolas_Therouin.jpg" alt="Photo de Nicolas THEROUIN" />
+                        <img class="card__front--img" src="../assets/image/pilotes/Nicolas_Therouin.jpg" alt="Photo du pilote Nicolas THEROUIN" />
                     </button>
                     <h2 class="card__front--name">Nicolas THEROUIN</h2>
                 </div>
@@ -91,7 +91,7 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body mx-auto">
-                                <img class="card__modal--palmares" src="../assets/image/pilotes/Palmares/P_Nicolas.jpg" alt="" />
+                                <img class="card__modal--palmares" src="../assets/image/pilotes/Palmares/P_Nicolas.jpg" alt="Nicolas Therouin Pilote depuis 2006. 2014 Coupe Pirelli Supersport 4ème, 2016 24h du Mans 15ème Superstock et de Barcelone 3ème EWC, 2018 et 2019 Bol d'Or et 23 heures 60, 2021 Ultimate Cup 600 4ème place. 2022 et 2023 24h de Barcelone, 24h de la Réunion 1ère place, IRRC Belgique, Allemagne, République Tchèque et Finale Trophée Toadster à Estoril" />
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
@@ -106,7 +106,7 @@
                 <div class="card__front">
                     <!-- click on image to show modal -->
                     <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#palmaresHerve">
-                        <img class="card__front--img" src="../assets/image/pilotes/Herve_Cheron.jpg" alt="Photo de Herve CHERON" />
+                        <img class="card__front--img" src="../assets/image/pilotes/Herve_Cheron.jpg" alt="Photo du pilote Herve CHERON" />
                     </button>
                     <h2 class="card__front--name">Herve CHERON</h2>
                 </div>
@@ -120,7 +120,7 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body mx-auto">
-                                <img class="card__modal--palmares" src="../assets/image/pilotes/Palmares/P_Hervé.jpg" alt="" />
+                                <img class="card__modal--palmares" src="../assets/image/pilotes/Palmares/P_Herve.jpg" alt="Hervé Cheron Pilote depuis 2006 2009 à 2011 coupe Ducati et courses Championnat de France Endurance, 2011 à 2020 Championnat de France Superbike 23h60 8 fois vainqueur, Coupe O3Z 600 et 1000 Plus de 10 victoires et 3ème place au championnat. 2018 24h du Mans et au Bol d'Or. 2022 24h de Barcelone" />
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
@@ -135,7 +135,7 @@
                 <div class="card__front">
                     <!-- click on image to show modal -->
                     <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#palmaresMathieu">
-                        <img class="card__front--img" src="../assets/image/pilotes/Mathieu_Bouvier.jpg" alt="Photo de Mathieu BOUVIER" />
+                        <img class="card__front--img" src="../assets/image/pilotes/Mathieu_Bouvier.jpg" alt="Photo du pilote Mathieu BOUVIER" />
                     </button>
                     <h2 class="card__front--name">Mathieu BOUVIER</h2>
                 </div>
@@ -149,7 +149,7 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body mx-auto">
-                                <img class="card__modal--palmares" src="../assets/image/pilotes/Palmares/P_Mathieu.jpg" alt="" />
+                                <img class="card__modal--palmares" src="../assets/image/pilotes/Palmares/P_Mathieu.jpg" alt="Mathieu Bouvier Pilote depuis 2015. 2017 et 2018 Ultimate Cup 600cc 2 podiums. 2021 VIP Race Noire 1000cc podium et 23h60. 2022 Champion de ligue catégorie 15 ch 25 Power, 1er 24h de Rouen catégorie électrique et 24h de Barcelone" />
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
