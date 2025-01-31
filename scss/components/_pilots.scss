@@ -15,6 +15,7 @@
   margin: auto;
   @include utils.flexbox(column, center, center, 4rem);
   &__title {
+    @include utils.fontTitle;
     color: utils.$neutral-0;
     text-align: center;
     font-size: 2rem;

@@ -280,6 +280,9 @@ sup {
   flex-wrap: nowrap;
 }
 .pilots__title {
+  font-family: "Permanent Marker", serif;
+  font-weight: 700;
+  font-style: normal;
   color: #f3f3f3;
   text-align: center;
   font-size: 2rem;
@@ -355,8 +358,15 @@ sup {
   justify-content: center;
   align-items: center;
   color: white;
+  background-color: #202020;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 10rem;
 }
 .contact__title {
+  font-family: "Permanent Marker", serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: 2rem;
   margin-bottom: 1rem;
   color: white;

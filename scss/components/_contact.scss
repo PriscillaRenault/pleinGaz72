@@ -1,9 +1,16 @@
+@use '../utils/_main' as utils;
 .contact {
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
+  background-color: utils.$neutral-900;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 10rem;
+
   &__title {
+    @include utils.fontTitle;
     font-size: 2rem;
     margin-bottom: 1rem;
     color: white;
