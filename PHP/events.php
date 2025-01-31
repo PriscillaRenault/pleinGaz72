@@ -35,7 +35,7 @@
     <script src="../JS/burger.js" defer></script>
 </head>
 
-<body class="flux grid">
+<body class=" grid">
 
     <!-- Header : fichier scss = header.scss -->
     <?php require_once __DIR__ . '/component/header.php'; ?>

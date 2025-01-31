@@ -1,25 +1,28 @@
 		<!-- footer fichier footer = footer.scss + bootstrap -->
-		<footer class="container-fluid text-center bg-primary mt-2">
-			<ul class="row m-4">
+		<footer class="footer">
+			<ul class="footer__networks">
 				<!-- Footer for index.php -->
 				<?php if (basename($_SERVER['PHP_SELF']) == 'index.php') : ?>
-					<li class="col m-2">
+					<li>
 						<a class="" target="_blank" href="https://www.facebook.com/pleingaz.soixantedouze/?locale=fr_FR">
-							<img src="./assets/image/icons8-facebook-nouveau-50.png" alt="Facebook" class="networks__logo" /></a>
+							<img src="./assets/image/icons8-facebook-nouveau-50.png" alt="Facebook" class="footer__networks--logo" /></a>
 					</li>
-					<li class="col m-2">
-						<a class="" target="_blank" href="https://www.instagram.com/plein_gaz_72/">
-							<img src="./assets/image/icons8-instagram-50.png" alt="Instagram" class="networks__logo" /></a>
+					<li>
+						<a target="_blank" href="https://www.instagram.com/plein_gaz_72/">
+							<img src="./assets/image/icons8-instagram-50.png" alt="Instagram" class="footer__networks--logo" /></a>
 					</li>
 					<!-- footer for the other pages -->
 				<?php else : ?>
-					<li class="col m-2">
-						<a class="" target="_blank" href="https://www.facebook.com/pleingaz.soixantedouze/?locale=fr_FR"><img src="../assets/image/icons8-facebook-nouveau-50.png" alt="Facebook" class="networks__logo" /></a>
+					<li>
+						<a target="_blank" href="https://www.facebook.com/pleingaz.soixantedouze/?locale=fr_FR"><img src="../assets/image/icons8-facebook-nouveau-50.png" alt="Facebook" class="networks__logo" /></a>
 					</li>
-					<li class="col m-2">
-						<a class="" target="_blank" href="https://www.instagram.com/plein_gaz_72/">
+					<li>
+						<a target="_blank" href="https://www.instagram.com/plein_gaz_72/">
 							<img src="../assets/image/icons8-instagram-50.png" alt="Instagram" class="networks__logo" /></a>
 					</li>
 				<?php endif; ?>
 			</ul>
+			<div class='footer__legals'>
+				© 2025 Team Plein Gaz 72. Tous droits réservés.
+			</div>
 		</footer>

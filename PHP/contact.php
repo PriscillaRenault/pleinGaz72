@@ -35,18 +35,18 @@
     <script src="../JS/burger.js" defer></script>
 </head>
 
-<body class="flux grid">
+<body class=" grid">
     <!-- Header : fichier scss = header.scss -->
     <?php require_once __DIR__ . '/component/header.php'; ?>
 
 
-    <main class="container contact bg-dark">
-        <div class="row">
-            <h1 class="p-5">Soutenez-Nous !!!</h1>
-        </div>
-        <p>
-            Vous souhaitez nous soutenir dans ce projet ?
-            <!-- Nous proposons à la vente différents articles :
+    <main class="contact">
+        <div">
+            <h1 class="contact__title">Soutenez-Nous !!!</h1>
+            </div>
+            <p>
+                Vous souhaitez nous soutenir dans ce projet ?
+                <!-- Nous proposons à la vente différents articles :
             </p>
             <div class="row">
                 <ul class="list-group p-3 col col-md-6 mx-auto">
@@ -61,39 +61,39 @@
                     </li>
                 </ul>
             </div> -->
-        </p>
+            </p>
 
-        <p class="my-4">
-            Pour toute demande, n'hésitez pas à nous contacter
-            via le formulaire ci dessous ou
-            par mail
-            <a href="mailto:pleingaz72@gmail.com"> Team Plein Gaz 72</a>
-        </p>
-        <div class="container">
-            <form action="submit_contact.php" method="post" class="col col-md-6 mx-auto my-3 bg-light border border-primary rounded">
-                <div class="form-group row my-3 d-flex ">
-                    <label for="email" class="text-center col-sm-2 col-form-label">Email :
-                    </label>
-                    <div class="col-sm-9">
-                        <input type="email" id="email" name="email" class="form-control" placeholder="email@example.com" />
+            <p class="my-4">
+                Pour toute demande, n'hésitez pas à nous contacter
+                via le formulaire ci dessous ou
+                par mail
+                <a href="mailto:pleingaz72@gmail.com"> Team Plein Gaz 72</a>
+            </p>
+            <div class="container">
+                <form action="submit_contact.php" method="post" class="col col-md-6 mx-auto my-3 bg-light border border-primary rounded">
+                    <div class="form-group row my-3 d-flex ">
+                        <label for="email" class="text-center col-sm-2 col-form-label">Email :
+                        </label>
+                        <div class="col-sm-9">
+                            <input type="email" id="email" name="email" class="form-control" placeholder="email@example.com" />
+                        </div>
+                        <small class="form-text text-dark mx-3 col-sm-9">Juste pour que l'on puisse vous répondre...<br> Nous ne
+                            diffuserons jamais votre email à un tiers.</small>
                     </div>
-                    <small class="form-text text-dark mx-3 col-sm-9">Juste pour que l'on puisse vous répondre...<br> Nous ne
-                        diffuserons jamais votre email à un tiers.</small>
-                </div>
-                <div class="form-group row my-3 d-flex">
-                    <label for="message" class="col-sm-2 m-2 text-center">Votre message:
-                    </label>
-                    <div class="col-sm-9">
-                        <textarea class="form-control w-100" id="message" name="message" rows="4"></textarea>
+                    <div class="form-group row my-3 d-flex">
+                        <label for="message" class="col-sm-2 m-2 text-center">Votre message:
+                        </label>
+                        <div class="col-sm-9">
+                            <textarea class="form-control w-100" id="message" name="message" rows="4"></textarea>
+                        </div>
                     </div>
-                </div>
-                <div class="d-flex justify-content-center mx-auto">
-                    <button type="submit" class="btn btn-primary my-3 font-weight-bold border-dark">
-                        <span class="font-weight-bold"> Envoyer</span>
-                    </button>
-                </div>
-            </form>
-        </div>
+                    <div class="d-flex justify-content-center mx-auto">
+                        <button type="submit" class="btn btn-primary my-3 font-weight-bold border-dark">
+                            <span class="font-weight-bold"> Envoyer</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
     </main>
     <!-- footer fichier footer = footer.scss + bootstrap -->
     <?php require_once __DIR__ . '/component/footer.php'; ?>

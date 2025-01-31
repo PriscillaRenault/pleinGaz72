@@ -5,6 +5,10 @@
 
 body {
   line-height: 1.2;
+  background-color: #f3f3f3;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
 }
 
 ol,
@@ -12,134 +16,7 @@ ul {
   list-style: none;
 }
 
-body {
-  background-color: #f3f3f3;
-}
-
-.grid {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
-}
-
-h1,
-h2,
-p {
-  color: #f3f3f3;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-}
-
-h1 {
-  font-size: 2rem;
-  font-family: "Permanent Marker", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-h2 {
-  font-size: 1.5rem;
-  font-family: "Permanent Marker", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.main {
-  background-color: #202020;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0.5rem;
-}
-.main__teamPhoto {
-  border-radius: 5px;
-  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.6);
-  border: 2px solid #e7fd05;
-  width: 70%;
-}
-.main__teamPresentation {
-  display: flex;
-  flex-direction: row;
-  padding: 2rem;
-}
-.main__motoPhoto {
-  display: none;
-}
-
-.sponsors {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  gap: 1rem;
-}
-.sponsors__img {
-  border-radius: 5px;
-  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.6);
-  border: 2px solid #e7fd05;
-  width: 7rem;
-  height: auto;
-  margin: 1rem;
-}
-
-@media screen and (min-width: 650px) {
-  .main {
-    width: 100%;
-    max-width: 1300px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1.5rem 0;
-  }
-  .main__teamPhoto {
-    width: 70%;
-    border-radius: 5px;
-    margin: 10px;
-    display: flex;
-  }
-  .main__teamPresentation {
-    display: flex;
-    flex-direction: row;
-  }
-  .main__teamPresentation h1 {
-    font-size: 2rem;
-    color: #f3f3f3;
-    padding: 0 2rem;
-  }
-  .main__teamPresentation p {
-    color: #f3f3f3;
-    padding: 1rem 2rem;
-    margin: 1rem;
-  }
-  .main__divMotoPhoto {
-    display: flex;
-    align-items: center;
-  }
-  .main__motoPhoto {
-    border-radius: 5px;
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.6);
-    border: 2px solid #e7fd05;
-    display: block;
-    width: auto;
-    height: 10rem;
-  }
-}
-@media screen and (min-width: 850px) {
-  .main .main__motoPhoto {
-    height: 20rem;
-  }
-}
-@media screen and (min-width: 1800px) {
-  body {
-    width: 100%;
-    max-width: 1700px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-header {
+.header {
   background-color: #202020;
   margin-bottom: 0.5rem;
 }
@@ -163,7 +40,7 @@ header {
 .nav a {
   color: #e7fd05;
   font-family: "Permanent Marker", serif;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
   transition: 0.7s ease;
 }
@@ -188,7 +65,7 @@ header {
   margin: auto 1rem;
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 768px) {
   .nav {
     justify-content: space-between;
     background: linear-gradient(130deg, #202020 24%, #f3f3f3 24% 25%, #e7fd05 25% 100%);
@@ -215,9 +92,161 @@ header {
     color: #202020;
   }
 }
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 100px) {
   .nav {
     justify-content: space-around;
+  }
+}
+.footer {
+  padding: 2rem;
+  background-color: #e7fd05;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.footer__networks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: nowrap;
+}
+.footer__networks--logo {
+  display: block;
+  width: 3rem;
+  cursor: pointer;
+  margin: 0 auto;
+}
+.footer__networks--logo :hover {
+  transform: scale(1.2);
+}
+.footer__legals {
+  margin: 1rem 0;
+}
+
+.home {
+  max-width: 1250px;
+  margin: 0 auto;
+  background-color: #202020;
+}
+.home__moto-race {
+  width: 30rem;
+  overflow: hidden;
+  margin: 50px auto;
+}
+.home__moto-race--photo {
+  width: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.6);
+  border: 2px solid #e7fd05;
+}
+.home__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.home__team-presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.home__team-presentation--title {
+  font-family: "Permanent Marker", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #f3f3f3;
+}
+.home__team-presentation--text {
+  color: #f3f3f3;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 20px 0;
+}
+.home__moto-official {
+  width: 25rem;
+  overflow: hidden;
+  margin: 50px auto;
+}
+.home__moto-official--photo {
+  width: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.6);
+  border: 2px solid #e7fd05;
+}
+
+.sponsors {
+  max-width: 1250px;
+  margin: 0 auto;
+  background-color: #202020;
+}
+.sponsors__title {
+  font-family: "Permanent Marker", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #f3f3f3;
+  text-align: center;
+  margin: 50px 0;
+}
+.sponsors__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 50px 0;
+}
+.sponsors__img {
+  width: 100px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.6);
+  border: 2px solid #e7fd05;
+}
+
+@media screen and (min-width: 768px) {
+  .home__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: nowrap;
+    padding: 2rem;
+  }
+  .home__team-presentation {
+    flex: 1;
+    max-width: 60%;
+  }
+  .home__team-presentation--title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .home__team-presentation--text {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  .home__moto-official {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  .home__moto-official--photo {
+    max-width: 100%;
+    height: auto;
   }
 }
 th {
@@ -226,11 +255,6 @@ th {
 
 sup {
   text-transform: lowercase;
-}
-
-.networks__logo {
-  width: 3rem;
-  cursor: pointer;
 }
 
 .hidden {
@@ -243,10 +267,31 @@ sup {
   z-index: 1;
 }
 
+.pilots {
+  max-width: 1250px;
+  min-height: 70vh;
+  background-color: #202020;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: nowrap;
+}
+.pilots__title {
+  color: #f3f3f3;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
 .card {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
   padding: 1rem;
   background-color: #202020;
   border: 0rem;
@@ -265,8 +310,7 @@ sup {
   border-radius: 5px;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.6);
   border: 2px solid #e7fd05;
-  width: 15rem;
-  height: 20rem;
+  width: 12rem;
 }
 .card__front--name {
   color: #e7fd05;
@@ -280,7 +324,7 @@ sup {
 }
 
 @media screen and (min-width: 700px) {
-  .allPilots {
+  .all-pilots {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -290,13 +334,14 @@ sup {
     margin-right: 1rem;
   }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1250px) {
   .main {
     display: flex;
     align-items: center;
     margin: auto 0;
     justify-content: center;
     gap: 1rem;
+    height: 100%;
   }
   .allPilots {
     max-width: 1300px;
@@ -304,4 +349,15 @@ sup {
     flex-flow: row nowrap;
     justify-content: space-around;
   }
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.contact__title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: white;
 }

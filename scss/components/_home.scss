@@ -1,0 +1,96 @@
+@use '../utils/_main' as utils;
+.home {
+  max-width: 1250px;
+  margin: 0 auto;
+  background-color: utils.$neutral-900;
+  &__moto-race {
+    width: 30rem;
+    overflow: hidden;
+    margin: 50px auto;
+    &--photo {
+      width: 90%;
+      object-fit: cover; // Assure que l'image couvre toute la zone sans distorsion
+      @include utils.img;
+    }
+  }
+  &__content {
+    @include utils.flexbox(column, center, center);
+  }
+  &__team-presentation {
+    @include utils.flexbox(column, center, center);
+    &--title {
+      @include utils.fontTitle;
+      color: utils.$neutral-0;
+    }
+    &--text {
+      color: utils.$neutral-0;
+      font-size: 1.2rem;
+      text-align: center;
+      margin: 20px 0;
+    }
+  }
+  &__moto-official {
+    width: 25rem;
+    overflow: hidden;
+    margin: 50px auto;
+    &--photo {
+      width: 90%;
+      object-fit: cover; // Assure que l'image couvre toute la zone sans distorsion
+      @include utils.img;
+    }
+  }
+}
+
+.sponsors {
+  max-width: 1250px;
+  margin: 0 auto;
+  background-color: utils.$neutral-900;
+  &__title {
+    @include utils.fontTitle;
+    color: utils.$neutral-0;
+    text-align: center;
+    margin: 50px 0;
+  }
+  &__container {
+    @include utils.flexbox(row, start, center);
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 50px 0;
+  }
+  &__img {
+    width: 100px;
+    margin: 20px;
+    @include utils.img;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home {
+    &__content {
+      @include utils.flexbox(row, space-between, center, 2rem);
+      padding: 2rem;
+    }
+    &__team-presentation {
+      flex: 1;
+      max-width: 60%;
+      &--title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      &--text {
+        font-size: 1.5rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+      }
+    }
+    &__moto-official {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      &--photo {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

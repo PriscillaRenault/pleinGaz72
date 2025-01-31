@@ -1,3 +1,4 @@
+@use '../utils/_main' as utils;
 * {
   padding: 0;
   margin: 0;
@@ -5,6 +6,10 @@
 
 body {
   line-height: 1.2;
+  background-color: utils.$neutral-0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
 }
 
 ol,

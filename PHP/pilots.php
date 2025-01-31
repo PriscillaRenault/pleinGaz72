@@ -35,15 +35,15 @@
     <script src="../JS/burger.js" defer></script>
 </head>
 
-<body class="flux grid">
+<body>
 
     <!-- Header : fichier scss = header.scss -->
     <?php require_once __DIR__ . '/component/header.php'; ?>
 
 
-    <main class="main flux bg-dark">
-        <h1>Les Pilotes du Team sarthois Plein Gaz 72</h1>
-        <article class="allPilots">
+    <main class="pilots">
+        <h1 class="pilots__title">Les Pilotes du Team sarthois Plein Gaz 72</h1>
+        <article class="all-pilots">
             <section class="card">
                 <div class="card__front">
                     <!-- click on image to show modal -->

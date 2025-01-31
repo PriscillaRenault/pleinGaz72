@@ -1,7 +1,24 @@
 //BS change colors in customs.scss
 
 @use '../utils/_main' as utils;
-.networks__logo {
-    width: 3rem;
-    cursor: pointer;
+
+.footer {
+  padding: 2rem;
+  background-color: utils.$primary;
+  @include utils.flexbox(column, center, center);
+  &__networks {
+    @include utils.flexbox(row, space-around, center, 4rem);
+    &--logo {
+      display: block;
+      width: 3rem;
+      cursor: pointer;
+      margin: 0 auto;
+      :hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+  &__legals {
+    margin: 1rem 0;
+  }
 }

@@ -7,102 +7,88 @@
 	<meta name="robots" content="index, follow">
 	<title>Accueil du site de l'association sarthoise Plein Gaz 72</title>
 	<meta name="description" content="Le team Plein Gaz 72 est né de la volonté d'un pilote Vincent Bridel d'accomplir ses rêves de compétitions motos. En 2011 avec des amis passionnés de courses d'endurance ils ont créés l'association en Sarthe à Joué l'Abbé.">
-	<!-- Google analytics (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-4BFC7QM9CD"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
 
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag('js', new Date());
-
-		gtag('config', 'G-4BFC7QM9CD');
-	</script>
 
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet" />
 	<link rel="icon" type="image/vnd-icon" href="./assets/image/logo.ico" />
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" disabled />
-	<link rel="stylesheet" href="./assets/css/custom.css" />
-	<link rel="stylesheet" href="./assets/css/style.css" />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
+	<link rel="stylesheet" href="./assets/CSS/style.css" />
 	<script src="https://kit.fontawesome.com/f30ebbf9c0.js" crossorigin="anonymous" defer></script>
 	<script src="JS/burger.js" defer></script>
 </head>
 
-<body class="flux grid">
+<body>
 	<!-- Header : fichier scss =header.scss -->
 	<?php require_once __DIR__ . '/PHP/component/header.php'; ?>
 
 	<!-- main  fichier scss = home.scss-->
-	<main class="main">
-		<img class="main__teamPhoto" src="./assets/image/couverture.JPG" alt="La moto de l'équipe de Sarthe Plein Gaz 72 roulant sur circuit. Photo Fabrice Huet Photography" />
-		<div>
-			<div class="main__teamPresentation">
-				<div>
-					<h1>Présentation de l'équipe</h1>
+	<main class="home">
+		<div class="home__moto-race">
 
-					<br />
-
-					<p>
-						Le Team Plein Gaz 72 est né en 2011 de la volonté
-						d’un pilote, Vincent Bridel, d’accomplir ses rêves
-						de compétition moto.
-					</p>
-					<p>
-						En 2018 débuta le projet endurance, les 3 pilotes
-						Vincent Bridel, Sébastien Bovagnet et Julien
-						Jacquette, ont su faire confiance à Nicolas Genetay
-						comme Team Manager pour se lancer sur une épreuve du
-						championnat d’Europe d’endurance en participant aux
-						12H de Magny Cours. Le Team Plein Gaz 72 a fini
-						cette épreuve à la 20 ème place du scratch.
-					</p>
-
-					<p>
-						Ont suivi en 2019 les 24H de Barcelone avec la même
-						équipe en y intégrant un 4ème pilote, Yannick
-						Chabot. Le Team a fini 11ème SuperStock et 26ème au
-						scratch.
-					</p>
-
-					<p>
-						En 2021, l’équipe a participé aux épreuves du Mans
-						et le Vigeant en Championnat de France d’endurance
-						(Ultimate Cup)
-					</p>
-					<p>
-						2022, de retour en Espagne pour participer à nouveau
-						aux 24H de Barcelone, Nicolas Genetay (Team Manager)
-						était entouré des 4 pilotes Vincent Bridel,
-						Sébastien Bovagnet, Nicolas Therouin et Yann Remars
-						pour finir à une très belle 8ème place en SuperStock
-						et 15ème place au scratch.
-					</p>
-					<p>
-						Au vu de ses résultats, le Team Plein Gaz 72 lance
-						son projet 24H du Mans Motos.
-					</p>
-
-					<p>
-						En avril 2024, le Team Plein Gaz 72 sera au départ
-						des 24H du Mans Motos avec les pilotes Vincent
-						Bridel, Nicolas Therouin, Mathieu Bouvier et Hervé
-						Cheron toujours managés par Nicolas Genetay.
-					</p>
-				</div>
-				<div class="main__divMotoPhoto">
-					<img src="assets/image/moto_officiel_paysage.JPG" alt="La Moto officielle du team" class="main__motoPhoto" />
-				</div>
-			</div>
+			<img class="home__moto-race--photo" src="./assets/image/couverture.JPG" alt="La moto de l'équipe de Sarthe Plein Gaz 72 roulant sur circuit. Photo Fabrice Huet Photography" />
 		</div>
-		<div>
-			<h2>Nos partenaires</h2>
-			<div class="sponsors">
+
+		<section class="home__content">
+			<div class="home__team-presentation">
+				<h1 class="home__team-presentation--title">Présentation de l'équipe</h1>
+
+				<br />
+
+				<p class="home__team-presentation--text">
+					Le Team Plein Gaz 72 est né en 2011 de la volonté
+					d’un pilote, Vincent Bridel, d’accomplir ses rêves
+					de compétition moto.
+				</p>
+				<p class="home__team-presentation--text">
+					En 2018 débuta le projet endurance, les 3 pilotes
+					Vincent Bridel, Sébastien Bovagnet et Julien
+					Jacquette, ont su faire confiance à Nicolas Genetay
+					comme Team Manager pour se lancer sur une épreuve du
+					championnat d’Europe d’endurance en participant aux
+					12H de Magny Cours. Le Team Plein Gaz 72 a fini
+					cette épreuve à la 20 ème place du scratch.
+				</p>
+
+				<p class="home__team-presentation--text">
+					Ont suivi en 2019 les 24H de Barcelone avec la même
+					équipe en y intégrant un 4ème pilote, Yannick
+					Chabot. Le Team a fini 11ème SuperStock et 26ème au
+					scratch.
+				</p>
+
+				<p class="home__team-presentation--text">
+					En 2021, l’équipe a participé aux épreuves du Mans
+					et le Vigeant en Championnat de France d’endurance
+					(Ultimate Cup)
+				</p>
+				<p class="home__team-presentation--text">
+					2022, de retour en Espagne pour participer à nouveau
+					aux 24H de Barcelone, Nicolas Genetay (Team Manager)
+					était entouré des 4 pilotes Vincent Bridel,
+					Sébastien Bovagnet, Nicolas Therouin et Yann Remars
+					pour finir à une très belle 8ème place en SuperStock
+					et 15ème place au scratch.
+				</p>
+				<p class="home__team-presentation--text">
+					Au vu de ses résultats, le Team Plein Gaz 72 lance
+					son projet 24H du Mans Motos.
+				</p>
+
+				<p class="home__team-presentation--text">
+					En avril 2024, le Team Plein Gaz 72 sera au départ
+					des 24H du Mans Motos avec les pilotes Vincent
+					Bridel, Nicolas Therouin, Mathieu Bouvier et Hervé
+					Cheron toujours managés par Nicolas Genetay.
+				</p>
+			</div>
+			<div class="home__moto-official">
+				<img src="assets/image/moto_officiel_paysage.JPG" alt="La Moto officielle du team" class="home__moto-official--photo" />
+			</div>
+		</section>
+		<section class="sponsors">
+			<h2 class="sponsors__title">Nos partenaires</h2>
+			<div class="sponsors__container">
 				<a href="https://a-stix.com/fr/" target="_blank" rel="noopener noreferrer">
 					<img class="sponsors__img" src="./assets/image/sponsors/astix.png" alt="A-StiX" />
 				</a>
@@ -169,7 +155,7 @@
 					<img class="sponsors__img" src="./assets/image/sponsors/super-u-mareil.png" alt="Super U Mareil en champagne" />
 				</a>
 			</div>
-		</div>
+			</div>
 	</main>
 	<?php require_once __DIR__ . '/PHP/component/footer.php'; ?>
 </body>

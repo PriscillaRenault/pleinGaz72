@@ -1,71 +1,84 @@
-@use "../utils/_main" as utils;
+@use '../utils/_main' as utils;
 .hidden {
-	display: none;
+  display: none;
 }
 .zoomed {
-	position: absolute;
-	transform: scale(2);
-	z-index: 1;
+  position: absolute;
+  transform: scale(2);
+  z-index: 1;
+}
+
+.pilots {
+  max-width: 1250px;
+  min-height: 70vh;
+  background-color: utils.$neutral-900;
+  margin: auto;
+  @include utils.flexbox(column, center, center, 4rem);
+  &__title {
+    color: utils.$neutral-0;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
 }
 
 .card {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 1rem;
-	background-color: utils.$neutral-900;
-	border: 0rem;
-	cursor: pointer;
-	&__front {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		background-color: utils.$neutral-900;
-		&:hover {
-			scale: 1.1;
-		}
-		&--img {
-			@include utils.img;
-			width: 15rem;
-			height: 20rem;
-		}
-		&--name {
-			color: utils.$primary;
-			margin-top: 0.5rem;
-		}
-	}
-	&__modal {
-		&--palmares {
-			@include utils.img;
-			width: 100%;
-		}
-	}
+  @include utils.flexbox(column, center, center);
+
+  padding: 1rem;
+  background-color: utils.$neutral-900;
+  border: 0rem;
+  cursor: pointer;
+  &__front {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: utils.$neutral-900;
+    &:hover {
+      scale: 1.1;
+    }
+    &--img {
+      @include utils.img;
+      width: 12rem;
+    }
+    &--name {
+      color: utils.$primary;
+      margin-top: 0.5rem;
+    }
+  }
+  &__modal {
+    &--palmares {
+      @include utils.img;
+      width: 100%;
+    }
+  }
 }
 
 @media screen and (min-width: 700px) {
-	.allPilots {
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: space-around;
-	}
-	.card {
-		margin-left: 1rem;
-		margin-right: 1rem;
-	}
+  .all-pilots {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  .card {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 
-@media screen and (min-width: 1000px) {
-	.main {
-		display: flex;
-		align-items: center;
-		margin: auto 0;
-		justify-content: center;
-		gap: 1rem;
-	}
-	.allPilots {
-		max-width: 1300px;
-		display: flex;
-		flex-flow: row nowrap;
-		justify-content: space-around;
-	}
+@media screen and (min-width: 1250px) {
+  .main {
+    display: flex;
+    align-items: center;
+    margin: auto 0;
+    justify-content: center;
+    gap: 1rem;
+    height: 100%;
+  }
+  .allPilots {
+    max-width: 1300px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
 }

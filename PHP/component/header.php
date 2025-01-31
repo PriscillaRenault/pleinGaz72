@@ -1,4 +1,4 @@
-<header>
+<header class="header">
     <nav class="nav">
         <!-- logo -->
         <?php if (basename($_SERVER['PHP_SELF']) == 'index.php') : ?>
